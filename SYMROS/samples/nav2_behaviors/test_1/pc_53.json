@@ -1,0 +1,12 @@
+{
+    "input_id": 53,
+    "parent_input_id": 0,
+    "location": "1.0.1.src/navigation2/nav2_costmap_2d/src/footprint_collision_checker.cpp.99",
+    "solving_weight": 7,
+    "constraint": [
+        {
+            "location": "1.0.1.src/navigation2/nav2_costmap_2d/src/footprint_collision_checker.cpp.99",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_2_data_13__1502 () (_ BitVec 8))\n(assert\n (let ((?x468 (fp (_ bv0 1) (_ bv1030 11) (_ bv4433230883192832 52))))\n(let ((?x68 (fp.to_ieee_bv ((_ to_fp_unsigned 11 53) roundNearestTiesToEven msg_2_data_13__1502))))\n(let ((?x11 ((_ to_fp 11 53) ?x68)))\n(let (($x396 (not (fp.eq ?x11 ?x468))))\n(not $x396))))))\n(check-sat)\n"
+        }
+    ]
+}

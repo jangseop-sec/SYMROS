@@ -1,0 +1,12 @@
+{
+    "input_id": 14,
+    "parent_input_id": 0,
+    "location": "4.0.0.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5664",
+    "solving_weight": 8,
+    "constraint": [
+        {
+            "location": "4.0.0.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5664",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_16_ranges_2__4242 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4243 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4244 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4245 () (_ BitVec 8))\n(assert\n (let ((?x152 (concat msg_16_ranges_2__4245 msg_16_ranges_2__4244 msg_16_ranges_2__4243 msg_16_ranges_2__4242)))\n(let ((?x116 (fp.to_ieee_bv ((_ to_fp 11 53) roundNearestTiesToEven ((_ to_fp 8 24) (fp.to_ieee_bv ((_ to_fp 8 24) ?x152)))))))\n(let ((?x144 ((_ to_fp 11 53) (fp.to_ieee_bv ((_ to_fp 11 53) ?x116)))))\n(let ((?x98 (fp (_ bv0 1) (_ bv1019 11) (_ bv4143311463907328 52))))\n(let (($x141 (and (fp.leq ?x144 (fp (_ bv0 1) (_ bv1024 11) (_ bv3377699720527872 52))) (fp.leq ?x98 ?x144))))\n(not $x141)))))))\n(check-sat)\n"
+        }
+    ]
+}

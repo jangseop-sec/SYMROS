@@ -1,0 +1,170 @@
+parameters:
+- type: bool
+  name: use_sim_time
+  default_value: false
+  value: null
+- type: double
+  name: frequency
+  default_value: 30.0
+  value: null
+- type: double
+  name: sensor_timeout
+  default_value: 0.1
+  value: null
+- type: bool
+  name: two_d_mode
+  default_value: true
+  value: null
+- type: double
+  name: transform_time_offset
+  default_value: 0.0
+  value: null
+- type: double
+  name: transform_timeout
+  default_value: 0.0
+  value: null
+- type: bool
+  name: print_diagnostics
+  default_value: false
+  value: null
+- type: bool
+  name: debug
+  default_value: false
+  value: null
+- type: bool
+  name: publish_tf
+  default_value: false
+  value: null
+- type: std::string
+  name: map_frame
+  default_value: map
+  value: null
+- type: std::string
+  name: odom_frame
+  default_value: odom
+  value: null
+- type: std::string
+  name: base_link_frame
+  default_value: base_footprint
+  value: null
+- type: std::string
+  name: world_frame
+  default_value: odom
+  value: null
+# ===== odom0 (cb7 /odom) =====
+- type: std::string
+  name: odom0
+  default_value: /odom
+  value: null
+- type: std::vector<bool>
+  name: odom0_config
+  default_value: [true, true, false, false, false, true, true, false, false,
+    false, false, true, false, false, false]
+  value: null
+- type: int64_t
+  name: odom0_queue_size
+  default_value: 10
+  value: null
+- type: bool
+  name: odom0_nodelay
+  default_value: false
+  value: null
+- type: bool
+  name: odom0_differential
+  default_value: false
+  value: null
+- type: bool
+  name: odom0_relative
+  default_value: false
+  value: null
+# ===== pose0 (cb8 /pose) =====
+- type: std::string
+  name: pose0
+  default_value: /pose
+  value: null
+- type: std::vector<bool>
+  name: pose0_config
+  default_value: [true, true, false, false, false, true, false, false, false,
+    false, false, false, false, false, false]
+  value: null
+- type: int64_t
+  name: pose0_queue_size
+  default_value: 10
+  value: null
+- type: bool
+  name: pose0_differential
+  default_value: false
+  value: null
+- type: bool
+  name: pose0_relative
+  default_value: false
+  value: null
+# ===== twist0 (cb9 /twist) =====
+- type: std::string
+  name: twist0
+  default_value: /twist
+  value: null
+- type: std::vector<bool>
+  name: twist0_config
+  default_value: [false, false, false, false, false, false, true, false, false,
+    false, false, true, false, false, false]
+  value: null
+- type: int64_t
+  name: twist0_queue_size
+  default_value: 10
+  value: null
+# ===== imu0 (cb10 /imu) =====
+- type: std::string
+  name: imu0
+  default_value: /imu
+  value: null
+- type: std::vector<bool>
+  name: imu0_config
+  default_value: [false, false, false, false, false, true, false, false, false,
+    false, false, true, true, false, false]
+  value: null
+- type: int64_t
+  name: imu0_queue_size
+  default_value: 10
+  value: null
+- type: bool
+  name: imu0_nodelay
+  default_value: false
+  value: null
+- type: bool
+  name: imu0_differential
+  default_value: false
+  value: null
+- type: bool
+  name: imu0_relative
+  default_value: false
+  value: null
+- type: bool
+  name: imu0_remove_gravitational_acceleration
+  default_value: true
+  value: null
+# ===== control (cb11 /cmd_vel) =====
+- type: bool
+  name: use_control
+  default_value: true
+  value: null
+- type: bool
+  name: stamped_control
+  default_value: false
+  value: null
+- type: double
+  name: control_timeout
+  default_value: 0.2
+  value: null
+- type: std::vector<bool>
+  name: control_config
+  default_value: [true, false, false, false, false, true]
+  value: null
+- type: std::vector<double>
+  name: acceleration_limits
+  default_value: [1.3, 0.0, 0.0, 0.0, 0.0, 3.4]
+  value: null
+- type: std::vector<double>
+  name: deceleration_limits
+  default_value: [1.3, 0.0, 0.0, 0.0, 0.0, 4.5]
+  value: null

@@ -1,0 +1,457 @@
+- callback_id: 1
+  name: /slam_toolbox/clear_queue
+  cb_type: 2
+  callee_idx: 6
+  msg_info:
+    type: slam_toolbox/ClearQueue
+    value: {}
+- callback_id: 2
+  name: /tf
+  cb_type: 1
+  callee_idx: 2
+  msg_info:
+    type: tf2_msgs/TFMessage
+    value:
+      transforms:
+        type: vector[geometry_msgs/TransformStamped]
+        value:
+        - type: geometry_msgs/TransformStamped
+          value:
+            header:
+              type: std_msgs/Header
+              value:
+                stamp:
+                  type: builtin_interfaces/Time
+                  value:
+                    sec:
+                      type: int32
+                      value: null
+                    nanosec:
+                      type: uint32
+                      value: null
+                frame_id:
+                  type: string
+                  value: null
+            child_frame_id:
+              type: string
+              value: null
+            transform:
+              type: geometry_msgs/Transform
+              value:
+                translation:
+                  type: geometry_msgs/Vector3
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                rotation:
+                  type: geometry_msgs/Quaternion
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                    w:
+                      type: float64
+                      value: null
+- callback_id: 3
+  name: /tf_static
+  cb_type: 1
+  callee_idx: 3
+  msg_info:
+    type: tf2_msgs/TFMessage
+    value:
+      transforms:
+        type: vector[geometry_msgs/TransformStamped]
+        value:
+        - type: geometry_msgs/TransformStamped
+          value:
+            header:
+              type: std_msgs/Header
+              value:
+                stamp:
+                  type: builtin_interfaces/Time
+                  value:
+                    sec:
+                      type: int32
+                      value: null
+                    nanosec:
+                      type: uint32
+                      value: null
+                frame_id:
+                  type: string
+                  value: null
+            child_frame_id:
+              type: string
+              value: null
+            transform:
+              type: geometry_msgs/Transform
+              value:
+                translation:
+                  type: geometry_msgs/Vector3
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                rotation:
+                  type: geometry_msgs/Quaternion
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                    w:
+                      type: float64
+                      value: null
+- callback_id: 4
+  name: /slam_toolbox/dynamic_map
+  cb_type: 2
+  callee_idx: 7
+  msg_info:
+    type: nav_msgs/GetMap
+    value: {}
+- callback_id: 5
+  name: /slam_toolbox/pause_new_measurements
+  cb_type: 2
+  callee_idx: 8
+  msg_info:
+    type: slam_toolbox/Pause
+    value: {}
+- callback_id: 6
+  name: /slam_toolbox/serialize_map
+  cb_type: 2
+  callee_idx: 9
+  msg_info:
+    type: slam_toolbox/SerializePoseGraph
+    value:
+      filename:
+        type: string
+        value: null
+- callback_id: 7
+  name: /slam_toolbox/deserialize_map
+  cb_type: 2
+  callee_idx: 10
+  msg_info:
+    type: slam_toolbox/DeserializePoseGraph
+    value:
+      UNSET:
+        type: int8
+        value: null
+      START_AT_FIRST_NODE:
+        type: int8
+        value: null
+      START_AT_GIVEN_POSE:
+        type: int8
+        value: null
+      LOCALIZE_AT_POSE:
+        type: int8
+        value: null
+      filename:
+        type: string
+        value: null
+      match_type:
+        type: int8
+        value: null
+      initial_pose:
+        type: geometry_msgs/Pose2D
+        value:
+          x:
+            type: float64
+            value: null
+          y:
+            type: float64
+            value: null
+          theta:
+            type: float64
+            value: null
+- callback_id: 8
+  name: /scan
+  cb_type: 1
+  callee_idx: 4
+  msg_info:
+    type: sensor_msgs/LaserScan
+    value:
+      header:
+        type: std_msgs/Header
+        value:
+          stamp:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          frame_id:
+            type: string
+            value: null
+      angle_min:
+        type: float32
+        value: null
+      angle_max:
+        type: float32
+        value: null
+      angle_increment:
+        type: float32
+        value: null
+      time_increment:
+        type: float32
+        value: null
+      scan_time:
+        type: float32
+        value: null
+      range_min:
+        type: float32
+        value: null
+      range_max:
+        type: float32
+        value: null
+      ranges:
+        type: vector[float32]
+        value:
+        - null
+      intensities:
+        type: vector[float32]
+        value:
+        - null
+- callback_id: 9
+  name: /slam_toolbox/save_map
+  cb_type: 2
+  callee_idx: 11
+  msg_info:
+    type: slam_toolbox/SaveMap
+    value:
+      name:
+        type: std_msgs/String
+        value:
+          data:
+            type: string
+            value: null
+- callback_id: 10
+  name: /map
+  cb_type: 1
+  callee_idx: 5
+  msg_info:
+    type: nav_msgs/OccupancyGrid
+    value:
+      header:
+        type: std_msgs/Header
+        value:
+          stamp:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          frame_id:
+            type: string
+            value: null
+      info:
+        type: nav_msgs/MapMetaData
+        value:
+          map_load_time:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          resolution:
+            type: float32
+            value: null
+          width:
+            type: uint32
+            value: null
+          height:
+            type: uint32
+            value: null
+          origin:
+            type: geometry_msgs/Pose
+            value:
+              position:
+                type: geometry_msgs/Point
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              orientation:
+                type: geometry_msgs/Quaternion
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+                  w:
+                    type: float64
+                    value: null
+      data:
+        type: vector[int8]
+        value:
+        - null
+- callback_id: 11
+  name: /slam_toolbox/clear_changes
+  cb_type: 2
+  callee_idx: 12
+  msg_info:
+    type: slam_toolbox/Clear
+    value: {}
+- callback_id: 12
+  name: /slam_toolbox/manual_loop_closure
+  cb_type: 2
+  callee_idx: 13
+  msg_info:
+    type: slam_toolbox/LoopClosure
+    value: {}
+- callback_id: 13
+  name: /slam_toolbox/get_interactive_markers
+  cb_type: 2
+  callee_idx: 14
+  msg_info:
+    type: visualization_msgs/GetInteractiveMarkers
+    value: {}
+- callback_id: 14
+  name: /slam_toolbox/feedback
+  cb_type: 1
+  callee_idx: 6
+  msg_info:
+    type: visualization_msgs/InteractiveMarkerFeedback
+    value:
+      header:
+        type: std_msgs/Header
+        value:
+          stamp:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          frame_id:
+            type: string
+            value: null
+      client_id:
+        type: string
+        value: null
+      marker_name:
+        type: string
+        value: null
+      control_name:
+        type: string
+        value: null
+      KEEP_ALIVE:
+        type: uint8
+        value: null
+      POSE_UPDATE:
+        type: uint8
+        value: null
+      MENU_SELECT:
+        type: uint8
+        value: null
+      BUTTON_CLICK:
+        type: uint8
+        value: null
+      MOUSE_DOWN:
+        type: uint8
+        value: null
+      MOUSE_UP:
+        type: uint8
+        value: null
+      event_type:
+        type: uint8
+        value: null
+      pose:
+        type: geometry_msgs/Pose
+        value:
+          position:
+            type: geometry_msgs/Point
+            value:
+              x:
+                type: float64
+                value: null
+              y:
+                type: float64
+                value: null
+              z:
+                type: float64
+                value: null
+          orientation:
+            type: geometry_msgs/Quaternion
+            value:
+              x:
+                type: float64
+                value: null
+              y:
+                type: float64
+                value: null
+              z:
+                type: float64
+                value: null
+              w:
+                type: float64
+                value: null
+      menu_entry_id:
+        type: uint32
+        value: null
+      mouse_point:
+        type: geometry_msgs/Point
+        value:
+          x:
+            type: float64
+            value: null
+          y:
+            type: float64
+            value: null
+          z:
+            type: float64
+            value: null
+      mouse_point_valid:
+        type: bool
+        value: null
+- callback_id: 15
+  name: /slam_toolbox/toggle_interactive_mode
+  cb_type: 2
+  callee_idx: 15
+  msg_info:
+    type: slam_toolbox/ToggleInteractive
+    value: {}

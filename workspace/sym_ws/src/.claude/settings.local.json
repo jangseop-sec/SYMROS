@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nm -DC /home/ubuntu/symros/workspace/symros_ws_2/build/slam_toolbox/libslam_toolbox__rosidl_typesupport_introspection_cpp.so)"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "input_id": 30181000005,
+    "parent_input_id": 1000005,
+    "location": "3018.0.0.src/robot_localization/src/ros_filter.cpp.529",
+    "solving_weight": 8,
+    "constraint": [
+        {
+            "location": "3018.0.0.src/robot_localization/src/ros_filter.cpp.529",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_8_orientation_covariance_0__3034 () (_ BitVec 8))\n(declare-fun msg_8_orientation_covariance_0__3035 () (_ BitVec 8))\n(declare-fun msg_8_orientation_covariance_0__3036 () (_ BitVec 8))\n(declare-fun msg_8_orientation_covariance_0__3037 () (_ BitVec 8))\n(declare-fun msg_8_orientation_covariance_0__3038 () (_ BitVec 8))\n(declare-fun msg_8_orientation_covariance_0__3039 () (_ BitVec 8))\n(declare-fun msg_8_orientation_covariance_0__3040 () (_ BitVec 8))\n(declare-fun msg_8_orientation_covariance_0__3041 () (_ BitVec 8))\n(assert\n (let ((?x38525 (concat msg_8_orientation_covariance_0__3041 msg_8_orientation_covariance_0__3040 msg_8_orientation_covariance_0__3039 msg_8_orientation_covariance_0__3038 msg_8_orientation_covariance_0__3037 msg_8_orientation_covariance_0__3036 msg_8_orientation_covariance_0__3035 msg_8_orientation_covariance_0__3034)))\n(let ((?x38523 ((_ to_fp 11 53) (fp.to_ieee_bv ((_ to_fp 11 53) ?x38525)))))\n(let ((?x38512 (fp.add roundNearestTiesToEven ?x38523 (fp (_ bv0 1) (_ bv1023 11) (_ bv0 52)))))\n(let (($x57 (not (or (fp.eq ?x38512 (_ +oo 11 53)) (fp.eq ?x38512 (_ -oo 11 53))))))\n(not $x57))))))\n(check-sat)\n"
+        }
+    ]
+}

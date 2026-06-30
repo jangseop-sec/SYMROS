@@ -1,0 +1,152 @@
+pre_callbacks:
+  - callback_id: 2
+    topic: "/tf_static"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 0
+              nanosec: 0
+            frame_id: "map"
+          child_frame_id: "odom"
+          transform:
+            translation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+            rotation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 1.0
+        - header:
+            stamp:
+              sec: 0
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_link"
+          transform:
+            translation:
+              x: 1.5
+              y: 1.0
+              z: 0.0
+            rotation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 1.0
+  - callback_id: 0
+    optional: False
+target_callbacks:
+  - callback_id: 3
+    topic: "/local_costmap/costmap_raw"
+    type: "nav2_msgs/msg/Costmap"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "odom"
+      metadata:
+        map_load_time:
+          sec: 0
+          nanosec: 0
+        update_time:
+          sec: 0
+          nanosec: 0
+        layer: "master"
+        resolution: 0.5
+        size_x: 10
+        size_y: 10
+        origin:
+          position:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+          orientation:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+            w: 1.0
+      data: [
+        100, 100, 100, 100, 100, 100, 100, 100, 100, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+      ]
+  - callback_id: 4
+    topic: "/local_costmap/published_footprint"
+    type: "geometry_msgs/msg/PolygonStamped"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "base_link"
+      polygon:
+        points:
+          - x: -0.1
+            y:  0.1
+            z:  0.0
+          - x:  0.1
+            y:  0.1
+            z:  0.0
+          - x:  0.1
+            y: -0.1
+            z:  0.0
+          - x: -0.1
+            y: -0.1
+            z:  0.0
+  - callback_id: 7
+    topic: "drive_on_heading"
+    type: "nav2_msgs/action/DriveOnHeading"
+    optional: False
+    msg:
+      target:
+        x: 0.3
+        y: 0.0
+        z: 0.0
+      speed: 0.1
+      time_allowance:
+        sec: 10
+        nanosec: 0
+  - callback_id: 6
+    topic: "backup"
+    type: "nav2_msgs/action/BackUp"
+    optional: False
+    msg:
+      target:
+        x: -0.3
+        y: 0.0
+        z: 0.0
+      speed: 0.1
+      time_allowance:
+        sec: 10
+        nanosec: 0
+  - callback_id: 5
+    topic: "spin"
+    type: "nav2_msgs/action/Spin"
+    optional: False
+    msg:
+      target_yaw: 1.5708
+      time_allowance:
+        sec: 10
+        nanosec: 0
+  - callback_id: 8
+    topic: "wait"
+    type: "nav2_msgs/action/Wait"
+    optional: False
+    msg:
+      time:
+        sec: 1
+        nanosec: 0

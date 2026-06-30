@@ -1,0 +1,11 @@
+.vscode
+
+build
+build-sym-libc++
+build-sym-libstdc++
+build-sym
+build-conc
+build-qsym
+install
+log
+test

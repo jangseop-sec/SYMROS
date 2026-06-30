@@ -1,0 +1,12 @@
+{
+    "input_id": 30353000024,
+    "parent_input_id": 3000024,
+    "location": "3035.0.0.src/robot_localization/src/ros_filter.cpp.2787",
+    "solving_weight": 10,
+    "constraint": [
+        {
+            "location": "3035.0.0.src/robot_localization/src/ros_filter.cpp.2787",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun req_9_pose_header_stamp_nanosec__3302 () (_ BitVec 8))\n(declare-fun req_9_pose_header_stamp_nanosec__3303 () (_ BitVec 8))\n(declare-fun req_9_pose_header_stamp_nanosec__3304 () (_ BitVec 8))\n(declare-fun req_9_pose_header_stamp_nanosec__3305 () (_ BitVec 8))\n(declare-fun req_9_pose_header_stamp_sec__3298 () (_ BitVec 8))\n(declare-fun req_9_pose_header_stamp_sec__3299 () (_ BitVec 8))\n(declare-fun req_9_pose_header_stamp_sec__3300 () (_ BitVec 8))\n(declare-fun req_9_pose_header_stamp_sec__3301 () (_ BitVec 8))\n(assert\n (let ((?x38522 (concat req_9_pose_header_stamp_nanosec__3305 req_9_pose_header_stamp_nanosec__3304 req_9_pose_header_stamp_nanosec__3303 req_9_pose_header_stamp_nanosec__3302)))\n(let ((?x38694 ((_ to_fp_unsigned 11 53) roundNearestTiesToEven ?x38522)))\n(let ((?x38648 (concat req_9_pose_header_stamp_sec__3301 req_9_pose_header_stamp_sec__3300 req_9_pose_header_stamp_sec__3299 req_9_pose_header_stamp_sec__3298)))\n(let ((?x38514 ((_ to_fp 11 53) roundNearestTiesToEven ?x38648)))\n(let ((?x51 (fp.add roundNearestTiesToEven ?x38514 (fp.div roundNearestTiesToEven ?x38694 (fp (_ bv0 1) (_ bv1052 11) (_ bv3885008372629504 52))))))\n(let (($x38660 (not (or (fp.eq ?x51 (_ +oo 11 53)) (fp.eq ?x51 (_ -oo 11 53))))))\n(not $x38660))))))))\n(check-sat)\n"
+        }
+    ]
+}

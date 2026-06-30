@@ -1,0 +1,538 @@
+- callback_id: 1
+  name: /tf
+  cb_type: 1
+  callee_idx: 3
+  msg_info:
+    type: tf2_msgs/TFMessage
+    value:
+      transforms:
+        type: vector[geometry_msgs/TransformStamped]
+        value:
+        - type: geometry_msgs/TransformStamped
+          value:
+            header:
+              type: std_msgs/Header
+              value:
+                stamp:
+                  type: builtin_interfaces/Time
+                  value:
+                    sec:
+                      type: int32
+                      value: null
+                    nanosec:
+                      type: uint32
+                      value: null
+                frame_id:
+                  type: string
+                  value: null
+            child_frame_id:
+              type: string
+              value: null
+            transform:
+              type: geometry_msgs/Transform
+              value:
+                translation:
+                  type: geometry_msgs/Vector3
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                rotation:
+                  type: geometry_msgs/Quaternion
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                    w:
+                      type: float64
+                      value: null
+- callback_id: 2
+  name: /tf_static
+  cb_type: 1
+  callee_idx: 4
+  msg_info:
+    type: tf2_msgs/TFMessage
+    value:
+      transforms:
+        type: vector[geometry_msgs/TransformStamped]
+        value:
+        - type: geometry_msgs/TransformStamped
+          value:
+            header:
+              type: std_msgs/Header
+              value:
+                stamp:
+                  type: builtin_interfaces/Time
+                  value:
+                    sec:
+                      type: int32
+                      value: null
+                    nanosec:
+                      type: uint32
+                      value: null
+                frame_id:
+                  type: string
+                  value: null
+            child_frame_id:
+              type: string
+              value: null
+            transform:
+              type: geometry_msgs/Transform
+              value:
+                translation:
+                  type: geometry_msgs/Vector3
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                rotation:
+                  type: geometry_msgs/Quaternion
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                    w:
+                      type: float64
+                      value: null
+- callback_id: 3
+  name: /map
+  cb_type: 1
+  callee_idx: 5
+  msg_info:
+    type: nav_msgs/OccupancyGrid
+    value:
+      header:
+        type: std_msgs/Header
+        value:
+          stamp:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          frame_id:
+            type: string
+            value: null
+      info:
+        type: nav_msgs/MapMetaData
+        value:
+          map_load_time:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          resolution:
+            type: float32
+            value: null
+          width:
+            type: uint32
+            value: null
+          height:
+            type: uint32
+            value: null
+          origin:
+            type: geometry_msgs/Pose
+            value:
+              position:
+                type: geometry_msgs/Point
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              orientation:
+                type: geometry_msgs/Quaternion
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+                  w:
+                    type: float64
+                    value: null
+      data:
+        type: vector[int8]
+        value:
+        - null
+- callback_id: 4
+  name: /global_costmap/footprint
+  cb_type: 1
+  callee_idx: 6
+  msg_info:
+    type: geometry_msgs/Polygon
+    value:
+      points:
+        type: vector[Point32]
+        value:
+        - type: geometry_msgs/Point32
+          value:
+            x:
+              type: float32
+              value: null
+            y:
+              type: float32
+              value: null
+            z:
+              type: float32
+              value: null
+- callback_id: 5
+  name: /global_costmap/get_costmap
+  cb_type: 2
+  callee_idx: 12
+  msg_info:
+    type: nav2_msgs/GetCostmap
+    value:
+      specs:
+        type: nav2_msgs/CostmapMetaData
+        value:
+          map_load_time:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          update_time:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          layer:
+            type: string
+            value: null
+          resolution:
+            type: float32
+            value: null
+          size_x:
+            type: uint32
+            value: null
+          size_y:
+            type: uint32
+            value: null
+          origin:
+            type: geometry_msgs/Pose
+            value:
+              position:
+                type: geometry_msgs/Point
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              orientation:
+                type: geometry_msgs/Quaternion
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+                  w:
+                    type: float64
+                    value: null
+- callback_id: 6
+  name: /global_costmap/clear_except_global_costmap
+  cb_type: 2
+  callee_idx: 13
+  msg_info:
+    type: nav2_msgs/ClearCostmapExceptRegion
+    value:
+      reset_distance:
+        type: float32
+        value: null
+- callback_id: 7
+  name: /global_costmap/clear_around_global_costmap
+  cb_type: 2
+  callee_idx: 14
+  msg_info:
+    type: nav2_msgs/ClearCostmapAroundRobot
+    value:
+      reset_distance:
+        type: float32
+        value: null
+- callback_id: 8
+  name: /global_costmap/clear_entirely_global_costmap
+  cb_type: 2
+  callee_idx: 15
+  msg_info:
+    type: nav2_msgs/ClearEntireCostmap
+    value:
+      request:
+        type: std_msgs/Empty
+        value: {}
+- callback_id: 9
+  name: compute_path_to_pose
+  cb_type: 4
+  callee_idx: 0
+  msg_info:
+    type: nav2_msgs/ComputePathToPose
+    value:
+      goal:
+        type: geometry_msgs/PoseStamped
+        value:
+          header:
+            type: std_msgs/Header
+            value:
+              stamp:
+                type: builtin_interfaces/Time
+                value:
+                  sec:
+                    type: int32
+                    value: null
+                  nanosec:
+                    type: uint32
+                    value: null
+              frame_id:
+                type: string
+                value: null
+          pose:
+            type: geometry_msgs/Pose
+            value:
+              position:
+                type: geometry_msgs/Point
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              orientation:
+                type: geometry_msgs/Quaternion
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+                  w:
+                    type: float64
+                    value: null
+      start:
+        type: geometry_msgs/PoseStamped
+        value:
+          header:
+            type: std_msgs/Header
+            value:
+              stamp:
+                type: builtin_interfaces/Time
+                value:
+                  sec:
+                    type: int32
+                    value: null
+                  nanosec:
+                    type: uint32
+                    value: null
+              frame_id:
+                type: string
+                value: null
+          pose:
+            type: geometry_msgs/Pose
+            value:
+              position:
+                type: geometry_msgs/Point
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              orientation:
+                type: geometry_msgs/Quaternion
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+                  w:
+                    type: float64
+                    value: null
+      planner_id:
+        type: string
+        value: null
+      use_start:
+        type: bool
+        value: null
+- callback_id: 10
+  name: compute_path_through_poses
+  cb_type: 4
+  callee_idx: 1
+  msg_info:
+    type: nav2_msgs/ComputePathThroughPoses
+    value:
+      goals:
+        type: vector[geometry_msgs/PoseStamped]
+        value:
+        - type: geometry_msgs/PoseStamped
+          value:
+            header:
+              type: std_msgs/Header
+              value:
+                stamp:
+                  type: builtin_interfaces/Time
+                  value:
+                    sec:
+                      type: int32
+                      value: null
+                    nanosec:
+                      type: uint32
+                      value: null
+                frame_id:
+                  type: string
+                  value: null
+            pose:
+              type: geometry_msgs/Pose
+              value:
+                position:
+                  type: geometry_msgs/Point
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                orientation:
+                  type: geometry_msgs/Quaternion
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                    w:
+                      type: float64
+                      value: null
+      start:
+        type: geometry_msgs/PoseStamped
+        value:
+          header:
+            type: std_msgs/Header
+            value:
+              stamp:
+                type: builtin_interfaces/Time
+                value:
+                  sec:
+                    type: int32
+                    value: null
+                  nanosec:
+                    type: uint32
+                    value: null
+              frame_id:
+                type: string
+                value: null
+          pose:
+            type: geometry_msgs/Pose
+            value:
+              position:
+                type: geometry_msgs/Point
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              orientation:
+                type: geometry_msgs/Quaternion
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+                  w:
+                    type: float64
+                    value: null
+      planner_id:
+        type: string
+        value: null
+      use_start:
+        type: bool
+        value: null

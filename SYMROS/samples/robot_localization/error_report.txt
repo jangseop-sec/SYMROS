@@ -1,0 +1,634 @@
+ERROR: ld.so: object '/home/ubuntu/symros/SYMROS/symros-libcxx/build/libsymros_sym_oracle.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Initializing symbolic runtime
+This is SymCC running with the simple backend
+For anything but debugging SymCC itself, you will want to use the QSYM backend instead (see README.md for build instructions)
+[symros_init] SymROSManager initialized
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+[rcl_node_init] entry point node name=[ekf_filter_node]
+[symros_create_service - start] ekf_filter_node/get_parameters
+[symros_create_service] ekf_filter_node/get_parameters
+[symros_create_service - end] ekf_filter_node/get_parameters
+[symros_create_service - start] ekf_filter_node/get_parameter_types
+[symros_create_service] ekf_filter_node/get_parameter_types
+[symros_create_service - end] ekf_filter_node/get_parameter_types
+[symros_create_service - start] ekf_filter_node/set_parameters
+[symros_create_service] ekf_filter_node/set_parameters
+[symros_create_service - end] ekf_filter_node/set_parameters
+[symros_create_service - start] ekf_filter_node/set_parameters_atomically
+[symros_create_service] ekf_filter_node/set_parameters_atomically
+[symros_create_service - end] ekf_filter_node/set_parameters_atomically
+[symros_create_service - start] ekf_filter_node/describe_parameters
+[symros_create_service] ekf_filter_node/describe_parameters
+[symros_create_service - end] ekf_filter_node/describe_parameters
+[symros_create_service - start] ekf_filter_node/list_parameters
+[symros_create_service] ekf_filter_node/list_parameters
+[symros_create_service - end] ekf_filter_node/list_parameters
+create_publisher called with topic: /parameter_events
+[debug] get parameter use_sim_time 
+[rcl_subscription_init] entry point: /parameter_events
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /parameter_events
+[symros_create_subscription] add subscription in database: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_node_init] entry point node name=[_]
+[debug] get parameter use_sim_time 
+[rcl_subscription_init] entry point: /parameter_events
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /parameter_events
+[symros_create_subscription] add subscription in database: /parameter_events
+[rcl_subscription_init] entry point: /tf
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /tf
+[symros_create_subscription] add subscription in database: /tf
+[rcl_subscription_init] entry point: /tf_static
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /tf_static
+[symros_create_subscription] add subscription in database: /tf_static
+create_publisher called with topic: /diagnostics
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+create_publisher called with topic: /tf
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter tf_prefix
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter control_config
+[debug] get_parameter - ok control_config
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter acceleration_limits
+[debug] get_parameter - ok acceleration_limits
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter acceleration_gains
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter deceleration_limits
+[debug] get_parameter - ok deceleration_limits
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter deceleration_gains
+use_control is set to true, but no deceleration_gains specified. Will use acceleration gains.
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter initial_state
+[rcl_publish] publish message: /parameter_events
+[rcl_subscription_init] entry point: set_pose
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: set_pose
+[symros_create_subscription] add subscription in database: set_pose
+[symros_create_service] add service: set_pose
+[symros_create_service - start] set_pose
+[symros_create_service] set_pose
+[symros_create_service - end] set_pose
+[symros_create_service] add service: enable
+[symros_create_service - start] enable
+[symros_create_service] enable
+[symros_create_service - end] enable
+[symros_create_service] add service: toggle
+[symros_create_service - start] toggle
+[symros_create_service] toggle
+[symros_create_service - end] toggle
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter odom0
+[debug] get_parameter - ok odom0
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_subscription_init] entry point: /odom
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /odom
+[symros_create_subscription] add subscription in database: /odom
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter odom1
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter pose0
+[debug] get_parameter - ok pose0
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_subscription_init] entry point: /pose
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /pose
+[symros_create_subscription] add subscription in database: /pose
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter pose1
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter twist0
+[debug] get_parameter - ok twist0
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_subscription_init] entry point: /twist
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /twist
+[symros_create_subscription] add subscription in database: /twist
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter twist1
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter imu0
+[debug] get_parameter - ok imu0
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+X acceleration is being measured from IMU; X velocity control input is disabled
+[rcl_subscription_init] entry point: /imu
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /imu
+[symros_create_subscription] add subscription in database: /imu
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter imu1
+[rcl_subscription_init] entry point: cmd_vel
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: cmd_vel
+[symros_create_subscription] add subscription in database: cmd_vel
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter process_noise_covariance
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter initial_estimate_covariance
+[rcl_publish] publish message: /diagnostics
+create_publisher called with topic: odometry/filtered
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+[symros_init] SymROSManager initialized
+[symros_get_sub] get subscription
+10
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /set_pose
+[symros] sub_idx[5] : /odom
+[symros] sub_idx[6] : /pose
+[symros] sub_idx[7] : /twist
+[symros] sub_idx[8] : /imu
+[symros] sub_idx[9] : /cmd_vel
+[symros_get_sub] return subscription
+[symros_get_sub] get subscription
+10
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /set_pose
+[symros] sub_idx[5] : /odom
+[symros] sub_idx[6] : /pose
+[symros] sub_idx[7] : /twist
+[symros] sub_idx[8] : /imu
+[symros] sub_idx[9] : /cmd_vel
+[symros_get_sub] return subscription
+[symros] srv_idx[7] : /enable
+[symros] srv_idx[8] : /toggle
+[symros_get_sub] get subscription
+10
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /set_pose
+[symros] sub_idx[5] : /odom
+[symros] sub_idx[6] : /pose
+[symros] sub_idx[7] : /twist
+[symros] sub_idx[8] : /imu
+[symros] sub_idx[9] : /cmd_vel
+[symros_get_sub] return subscription
+[symros_get_sub] get subscription
+10
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /set_pose
+[symros] sub_idx[5] : /odom
+[symros] sub_idx[6] : /pose
+[symros] sub_idx[7] : /twist
+[symros] sub_idx[8] : /imu
+[symros] sub_idx[9] : /cmd_vel
+[symros_get_sub] return subscription
+[symros_get_sub] get subscription
+10
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /set_pose
+[symros] sub_idx[5] : /odom
+[symros] sub_idx[6] : /pose
+[symros] sub_idx[7] : /twist
+[symros] sub_idx[8] : /imu
+[symros] sub_idx[9] : /cmd_vel
+[symros_get_sub] return subscription
+[symros_get_sub] get subscription
+10
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /set_pose
+[symros] sub_idx[5] : /odom
+[symros] sub_idx[6] : /pose
+[symros] sub_idx[7] : /twist
+[symros] sub_idx[8] : /imu
+[symros] sub_idx[9] : /cmd_vel
+[symros_get_sub] return subscription
+[symros_get_sub] get subscription
+10
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /set_pose
+[symros] sub_idx[5] : /odom
+[symros] sub_idx[6] : /pose
+[symros] sub_idx[7] : /twist
+[symros] sub_idx[8] : /imu
+[symros] sub_idx[9] : /cmd_vel
+[symros_get_sub] return subscription
+[symros] srv_idx[6] : /set_pose
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+[symros] callback.dispatch
+[symros] callback.dispatch finished
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+[symros] callback.dispatch
+[symros] callback.dispatch finished
+
+===== START CALLBACK TEST =====
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+
+==== SYMBOLIC BARRIER START ====
+Trying to solve:
+Location:0.0.0.include/c++/v1/string.1860
+SMT:(declare-fun msg_4_header_frame_id_string_size__1171 () (_ BitVec 8))
+(assert (bvule (concat #x00000000000000 msg_4_header_frame_id_string_size__1171)
+       #xffffffffffffffef))
+
+====end of smt====
+Trying to solve:
+Location:1.0.1.include/c++/v1/string.1863
+SMT:(declare-fun msg_4_header_frame_id_string_size__1171 () (_ BitVec 8))
+(assert (not (bvule #x17 msg_4_header_frame_id_string_size__1171)))
+
+====end of smt====
+Trying to solve:
+Location:2.0.1.include/c++/v1/string.1876
+SMT:(declare-fun msg_4_header_frame_id_string_size__1171 () (_ BitVec 8))
+(assert (= msg_4_header_frame_id_string_size__1171 #x00))
+
+====end of smt====
+
+==== SYMBOLIC BARRIER STOP ====
+
+==== SYMBOLIC BARRIER START ====
+Trying to solve:
+Location:0.0.0.include/c++/v1/string.1860
+SMT:(declare-fun msg_5_header_frame_id_string_size__1293 () (_ BitVec 8))
+(assert (bvule (concat #x00000000000000 msg_5_header_frame_id_string_size__1293)
+       #xffffffffffffffef))
+
+====end of smt====
+Trying to solve:
+Location:1.0.1.include/c++/v1/string.1863
+SMT:(declare-fun msg_5_header_frame_id_string_size__1293 () (_ BitVec 8))
+(assert (not (bvule #x17 msg_5_header_frame_id_string_size__1293)))
+
+====end of smt====
+Trying to solve:
+Location:2.0.0.include/c++/v1/string.1876
+SMT:(declare-fun msg_5_header_frame_id_string_size__1293 () (_ BitVec 8))
+(assert (not (= msg_5_header_frame_id_string_size__1293 #x00)))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.include/c++/v1/string.1860
+SMT:(declare-fun msg_5_child_frame_id_string_size__1358 () (_ BitVec 8))
+(assert (bvule (concat #x00000000000000 msg_5_child_frame_id_string_size__1358)
+       #xffffffffffffffef))
+
+====end of smt====
+Trying to solve:
+Location:1.0.1.include/c++/v1/string.1863
+SMT:(declare-fun msg_5_child_frame_id_string_size__1358 () (_ BitVec 8))
+(assert (not (bvule #x17 msg_5_child_frame_id_string_size__1358)))
+
+====end of smt====
+Trying to solve:
+Location:2.0.0.include/c++/v1/string.1876
+SMT:(declare-fun msg_5_child_frame_id_string_size__1358 () (_ BitVec 8))
+(assert (not (= msg_5_child_frame_id_string_size__1358 #x00)))
+
+====end of smt====
+
+==== SYMBOLIC BARRIER STOP ====
+[symros] callback.dispatch
+Trying to solve:
+Location:0.0.0.../src/rclcpp/rclcpp/time.cpp.73
+SMT:(declare-fun msg_5_header_stamp_sec__1285 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1286 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1287 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1288 () (_ BitVec 8))
+(assert (bvsle #x00000000
+       (concat msg_5_header_stamp_sec__1288
+               msg_5_header_stamp_sec__1287
+               msg_5_header_stamp_sec__1286
+               msg_5_header_stamp_sec__1285)))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.src/robot_localization/src/ros_filter.cpp.1828
+SMT:(declare-fun msg_5_header_stamp_nanosec__1289 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1290 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1291 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1292 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1285 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1286 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1287 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1288 () (_ BitVec 8))
+(assert (let ((a!1 ((_ extract 63 8)
+             (bvmul #x000000003b9aca00
+                    (concat ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            msg_5_header_stamp_sec__1288
+                            msg_5_header_stamp_sec__1287
+                            msg_5_header_stamp_sec__1286
+                            msg_5_header_stamp_sec__1285)))))
+(let ((a!2 (concat ((_ extract 63 8)
+                     (bvadd (concat a!1 #x00)
+                            (concat #x00000000
+                                    msg_5_header_stamp_nanosec__1292
+                                    msg_5_header_stamp_nanosec__1291
+                                    msg_5_header_stamp_nanosec__1290
+                                    msg_5_header_stamp_nanosec__1289)))
+                   msg_5_header_stamp_nanosec__1289)))
+  (not (bvsle a!2 #x0000000000000000)))))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.../src/rclcpp/rclcpp/time.cpp.73
+SMT:(declare-fun msg_5_header_stamp_sec__1285 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1286 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1287 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1288 () (_ BitVec 8))
+(assert (bvsle #x00000000
+       (concat msg_5_header_stamp_sec__1288
+               msg_5_header_stamp_sec__1287
+               msg_5_header_stamp_sec__1286
+               msg_5_header_stamp_sec__1285)))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.src/robot_localization/src/ros_filter.cpp.1888
+SMT:(declare-fun msg_5_header_stamp_nanosec__1289 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1290 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1291 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1292 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1285 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1286 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1287 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1288 () (_ BitVec 8))
+(assert (let ((a!1 ((_ extract 63 8)
+             (bvmul #x000000003b9aca00
+                    (concat ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            ((_ extract 7 7) msg_5_header_stamp_sec__1288)
+                            msg_5_header_stamp_sec__1288
+                            msg_5_header_stamp_sec__1287
+                            msg_5_header_stamp_sec__1286
+                            msg_5_header_stamp_sec__1285)))))
+(let ((a!2 (concat ((_ extract 63 8)
+                     (bvadd (concat a!1 #x00)
+                            (concat #x00000000
+                                    msg_5_header_stamp_nanosec__1292
+                                    msg_5_header_stamp_nanosec__1291
+                                    msg_5_header_stamp_nanosec__1290
+                                    msg_5_header_stamp_nanosec__1289)))
+                   msg_5_header_stamp_nanosec__1289)))
+  (not (bvsle a!2 #x0000000000000000)))))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.../src/rclcpp/rclcpp/time.cpp.73
+SMT:(declare-fun msg_5_header_stamp_sec__1285 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1286 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1287 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1288 () (_ BitVec 8))
+(assert (bvsle #x00000000
+       (concat msg_5_header_stamp_sec__1288
+               msg_5_header_stamp_sec__1287
+               msg_5_header_stamp_sec__1286
+               msg_5_header_stamp_sec__1285)))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.../src/rclcpp/rclcpp/time.cpp.73
+SMT:(declare-fun msg_5_header_stamp_sec__1285 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1286 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1287 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1288 () (_ BitVec 8))
+(assert (bvsle #x00000000
+       (concat msg_5_header_stamp_sec__1288
+               msg_5_header_stamp_sec__1287
+               msg_5_header_stamp_sec__1286
+               msg_5_header_stamp_sec__1285)))
+
+====end of smt====
+Trying to solve:
+Location:9.0.1.include/c++/v1/string.2403
+SMT:(declare-fun msg_5_header_frame_id_string_size__1293 () (_ BitVec 8))
+(assert (not (bvule #b0110000 ((_ extract 6 0) msg_5_header_frame_id_string_size__1293))))
+
+====end of smt====
+Trying to solve:
+Location:10.0.0.include/c++/v1/string.2403
+SMT:(declare-fun msg_5_header_frame_id_string_size__1293 () (_ BitVec 8))
+(assert (not (= ((_ extract 6 0) msg_5_header_frame_id_string_size__1293) #b0000000)))
+
+====end of smt====
+Trying to solve:
+Location:3033.0.0.src/robot_localization/src/ros_filter.cpp.2788
+SMT:(declare-fun msg_5_header_stamp_nanosec__1289 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1290 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1291 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1292 () (_ BitVec 8))
+(assert (let ((a!1 (fp.div roundNearestTiesToEven
+                   ((_ to_fp_unsigned 11 53)
+                     roundNearestTiesToEven
+                     (concat msg_5_header_stamp_nanosec__1292
+                             msg_5_header_stamp_nanosec__1291
+                             msg_5_header_stamp_nanosec__1290
+                             msg_5_header_stamp_nanosec__1289))
+                   (fp #b0 #b10000011100 #xdcd6500000000))))
+  (not (or (fp.eq a!1 (_ +oo 11 53)) (fp.eq a!1 (_ -oo 11 53))))))
+
+====end of smt====
+Trying to solve:
+Location:3035.0.0.src/robot_localization/src/ros_filter.cpp.2787
+SMT:(declare-fun msg_5_header_stamp_nanosec__1289 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1290 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1291 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1292 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1285 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1286 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1287 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1288 () (_ BitVec 8))
+(assert (let ((a!1 (fp.add roundNearestTiesToEven
+                   ((_ to_fp 11 53)
+                     roundNearestTiesToEven
+                     (concat msg_5_header_stamp_sec__1288
+                             msg_5_header_stamp_sec__1287
+                             msg_5_header_stamp_sec__1286
+                             msg_5_header_stamp_sec__1285))
+                   (fp.div roundNearestTiesToEven
+                           ((_ to_fp_unsigned 11 53)
+                             roundNearestTiesToEven
+                             (concat msg_5_header_stamp_nanosec__1292
+                                     msg_5_header_stamp_nanosec__1291
+                                     msg_5_header_stamp_nanosec__1290
+                                     msg_5_header_stamp_nanosec__1289))
+                           (fp #b0 #b10000011100 #xdcd6500000000)))))
+  (not (or (fp.eq a!1 (_ +oo 11 53)) (fp.eq a!1 (_ -oo 11 53))))))
+
+====end of smt====
+Trying to solve:
+Location:0.0.1.src/geometry2/tf2/src/time.cpp.48
+SMT:(declare-fun msg_5_header_stamp_nanosec__1289 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1290 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1291 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_nanosec__1292 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1285 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1286 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1287 () (_ BitVec 8))
+(declare-fun msg_5_header_stamp_sec__1288 () (_ BitVec 8))
+(assert (let ((a!1 (fp.add roundNearestTiesToEven
+                   ((_ to_fp 11 53)
+                     roundNearestTiesToEven
+                     (concat msg_5_header_stamp_sec__1288
+                             msg_5_header_stamp_sec__1287
+                             msg_5_header_stamp_sec__1286
+                             msg_5_header_stamp_sec__1285))
+                   (fp.div roundNearestTiesToEven
+                           ((_ to_fp_unsigned 11 53)
+                             roundNearestTiesToEven
+                             (concat msg_5_header_stamp_nanosec__1292
+                                     msg_5_header_stamp_nanosec__1291
+                                     msg_5_header_stamp_nanosec__1290
+                                     msg_5_header_stamp_nanosec__1289))
+                           (fp #b0 #b10000011100 #xdcd6500000000)))))
+(let ((a!2 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv a!1))))))
+  (fp.lt (fp #b0 #b10000011101 #xfffffffc00000) a!2))))
+
+====end of smt====
+terminate called after throwing an instance of 'std::overflow_error'
+  what():  Input t_sec is too large or too small for tf2::Duration
+./scripts/sym_install.bash: line 41: 1810157 Aborted                 OMP_NUM_THREADS=1 $WS/build/symros_exec/exec "$INPUT_FILE" "$STATE_MODE"

@@ -1,0 +1,117 @@
+{
+    "input_id": 691,
+    "parent_input_id": 4000431,
+    "location": "12.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.234",
+    "solving_weight": 129,
+    "constraint": [
+        {
+            "smt": "(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(assert (not (and (= msg_2_info_height__4050 #x00)\n          (= msg_2_info_height__4051 #x00)\n          (= msg_2_info_height__4052 #x00)\n          (= msg_2_info_height__4053 #x00))))\n\n",
+            "location": "2.0.1.install/nav2_util/include/nav2_util/validate_messages.hpp.157",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(assert (= (bvmul (concat msg_2_info_height__4053\n                  msg_2_info_height__4052\n                  msg_2_info_height__4051\n                  msg_2_info_height__4050)\n          (concat msg_2_info_width__4049\n                  msg_2_info_width__4048\n                  msg_2_info_width__4047\n                  msg_2_info_width__4046))\n   #x00000064))\n\n",
+            "location": "2.0.1.install/nav2_util/include/nav2_util/validate_messages.hpp.170",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(assert (and (= msg_2_info_width__4046 #x0a)\n     (= msg_2_info_width__4047 #x00)\n     (= msg_2_info_width__4048 #x00)\n     (= msg_2_info_width__4049 #x00)))\n\n",
+            "location": "1.0.1.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.196",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(assert (and (= msg_2_info_height__4050 #x0a)\n     (= msg_2_info_height__4051 #x00)\n     (= msg_2_info_height__4052 #x00)\n     (= msg_2_info_height__4053 #x00)))\n\n",
+            "location": "2.0.1.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.197",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 1) msg_2_info_width__4046) #b0000000)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 2) msg_2_info_width__4046) #b000000)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00)\n          (bvule ((_ extract 1 0) msg_2_info_width__4046) #b10))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 2) msg_2_info_width__4046) #b000000)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 3) msg_2_info_width__4046) #b00000)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00)\n          (bvule ((_ extract 2 0) msg_2_info_width__4046) #b100))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 3) msg_2_info_width__4046) #b00000)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00)\n          (bvule ((_ extract 2 0) msg_2_info_width__4046) #b101))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 3) msg_2_info_width__4046) #b00000)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00)\n          (bvule ((_ extract 2 0) msg_2_info_width__4046) #b110))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 3) msg_2_info_width__4046) #b00000)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 4) msg_2_info_width__4046) #x0)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00)\n          (bvule ((_ extract 3 0) msg_2_info_width__4046) #x8))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 4) msg_2_info_width__4046) #x0)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00)\n          (bvule ((_ extract 3 0) msg_2_info_width__4046) #x9))))\n\n",
+            "location": "13.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(assert (and (= ((_ extract 7 4) msg_2_info_width__4046) #x0)\n     (= msg_2_info_width__4047 #x00)\n     (= msg_2_info_width__4048 #x00)\n     (= msg_2_info_width__4049 #x00)\n     (bvule ((_ extract 3 0) msg_2_info_width__4046) #xa)))\n\n",
+            "location": "13.0.1.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.235",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 1) msg_2_info_height__4050) #b0000000)\n          (= msg_2_info_height__4051 #x00)\n          (= msg_2_info_height__4052 #x00)\n          (= msg_2_info_height__4053 #x00))))\n\n",
+            "location": "12.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.234",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 2) msg_2_info_height__4050) #b000000)\n          (= msg_2_info_height__4051 #x00)\n          (= msg_2_info_height__4052 #x00)\n          (= msg_2_info_height__4053 #x00)\n          (bvule ((_ extract 1 0) msg_2_info_height__4050) #b10))))\n\n",
+            "location": "12.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.234",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 2) msg_2_info_height__4050) #b000000)\n          (= msg_2_info_height__4051 #x00)\n          (= msg_2_info_height__4052 #x00)\n          (= msg_2_info_height__4053 #x00))))\n\n",
+            "location": "12.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.234",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 3) msg_2_info_height__4050) #b00000)\n          (= msg_2_info_height__4051 #x00)\n          (= msg_2_info_height__4052 #x00)\n          (= msg_2_info_height__4053 #x00)\n          (bvule ((_ extract 2 0) msg_2_info_height__4050) #b100))))\n\n",
+            "location": "12.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.234",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 3) msg_2_info_height__4050) #b00000)\n          (= msg_2_info_height__4051 #x00)\n          (= msg_2_info_height__4052 #x00)\n          (= msg_2_info_height__4053 #x00)\n          (bvule ((_ extract 2 0) msg_2_info_height__4050) #b101))))\n\n",
+            "location": "12.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.234",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 3) msg_2_info_height__4050) #b00000)\n          (= msg_2_info_height__4051 #x00)\n          (= msg_2_info_height__4052 #x00)\n          (= msg_2_info_height__4053 #x00)\n          (bvule ((_ extract 2 0) msg_2_info_height__4050) #b110))))\n\n",
+            "location": "12.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.234",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_info_width__4049 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4048 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4047 () (_ BitVec 8))\n(declare-fun msg_2_info_width__4046 () (_ BitVec 8))\n(assert (not (and (= msg_2_info_width__4046 #x00)\n          (= msg_2_info_width__4047 #x00)\n          (= msg_2_info_width__4048 #x00)\n          (= msg_2_info_width__4049 #x00))))\n\n",
+            "location": "3.0.1.install/nav2_util/include/nav2_util/validate_messages.hpp.157",
+            "dependencies": []
+        },
+        {
+            "location": "12.0.0.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.234",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_2_info_height__4053 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4052 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4051 () (_ BitVec 8))\n(declare-fun msg_2_info_height__4050 () (_ BitVec 8))\n(assert\n (let (($x737 (= msg_2_info_height__4053 (_ bv0 8))))\n(let (($x446 (= msg_2_info_height__4052 (_ bv0 8))))\n(let (($x743 (= msg_2_info_height__4051 (_ bv0 8))))\n(let (($x756 (= ((_ extract 7 3) msg_2_info_height__4050) (_ bv0 5))))\n(let (($x68 (not (and $x756 $x743 $x446 $x737))))\n(not $x68)))))))\n(check-sat)\n"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "input_id": 1017,
+    "parent_input_id": 1000531,
+    "location": "1.0.1.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.269",
+    "solving_weight": 5,
+    "constraint": [
+        {
+            "location": "1.0.1.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.269",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_2_data_70__4180 () (_ BitVec 8))\n(assert\n (let (($x2175 (= msg_2_data_70__4180 (_ bv255 8))))\n(let (($x871 (not $x2175)))\n(not $x871))))\n(check-sat)\n"
+        }
+    ]
+}

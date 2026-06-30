@@ -1,0 +1,456 @@
+- callback_id: 1
+  name: /tf
+  cb_type: 1
+  callee_idx: 1
+  msg_info:
+    type: tf2_msgs/TFMessage
+    value:
+      transforms:
+        type: vector[geometry_msgs/TransformStamped]
+        value:
+        - type: geometry_msgs/TransformStamped
+          value:
+            header:
+              type: std_msgs/Header
+              value:
+                stamp:
+                  type: builtin_interfaces/Time
+                  value:
+                    sec:
+                      type: int32
+                      value: null
+                    nanosec:
+                      type: uint32
+                      value: null
+                frame_id:
+                  type: string
+                  value: null
+            child_frame_id:
+              type: string
+              value: null
+            transform:
+              type: geometry_msgs/Transform
+              value:
+                translation:
+                  type: geometry_msgs/Vector3
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                rotation:
+                  type: geometry_msgs/Quaternion
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                    w:
+                      type: float64
+                      value: null
+- callback_id: 2
+  name: /tf_static
+  cb_type: 1
+  callee_idx: 2
+  msg_info:
+    type: tf2_msgs/TFMessage
+    value:
+      transforms:
+        type: vector[geometry_msgs/TransformStamped]
+        value:
+        - type: geometry_msgs/TransformStamped
+          value:
+            header:
+              type: std_msgs/Header
+              value:
+                stamp:
+                  type: builtin_interfaces/Time
+                  value:
+                    sec:
+                      type: int32
+                      value: null
+                    nanosec:
+                      type: uint32
+                      value: null
+                frame_id:
+                  type: string
+                  value: null
+            child_frame_id:
+              type: string
+              value: null
+            transform:
+              type: geometry_msgs/Transform
+              value:
+                translation:
+                  type: geometry_msgs/Vector3
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                rotation:
+                  type: geometry_msgs/Quaternion
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                    w:
+                      type: float64
+                      value: null
+- callback_id: 3
+  name: /odom
+  cb_type: 1
+  callee_idx: 3
+  msg_info:
+    type: nav_msgs/Odometry
+    value:
+      header:
+        type: std_msgs/Header
+        value:
+          stamp:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          frame_id:
+            type: string
+            value: null
+      child_frame_id:
+        type: string
+        value: null
+      pose:
+        type: geometry_msgs/PoseWithCovariance
+        value:
+          pose:
+            type: geometry_msgs/Pose
+            value:
+              position:
+                type: geometry_msgs/Point
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              orientation:
+                type: geometry_msgs/Quaternion
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+                  w:
+                    type: float64
+                    value: null
+          covariance:
+            type: list[float64]
+            value:
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+      twist:
+        type: geometry_msgs/TwistWithCovariance
+        value:
+          twist:
+            type: geometry_msgs/Twist
+            value:
+              linear:
+                type: geometry_msgs/Vector3
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              angular:
+                type: geometry_msgs/Vector3
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+          covariance:
+            type: list[float64]
+            value:
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+            - null
+- callback_id: 4
+  name: navigate_to_pose
+  cb_type: 4
+  callee_idx: 0
+  msg_info:
+    type: nav2_msgs/NavigateToPose
+    value:
+      pose:
+        type: geometry_msgs/PoseStamped
+        value:
+          header:
+            type: std_msgs/Header
+            value:
+              stamp:
+                type: builtin_interfaces/Time
+                value:
+                  sec:
+                    type: int32
+                    value: null
+                  nanosec:
+                    type: uint32
+                    value: null
+              frame_id:
+                type: string
+                value: null
+          pose:
+            type: geometry_msgs/Pose
+            value:
+              position:
+                type: geometry_msgs/Point
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+              orientation:
+                type: geometry_msgs/Quaternion
+                value:
+                  x:
+                    type: float64
+                    value: null
+                  y:
+                    type: float64
+                    value: null
+                  z:
+                    type: float64
+                    value: null
+                  w:
+                    type: float64
+                    value: null
+      behavior_tree:
+        type: string
+        value: null
+- callback_id: 5
+  name: /goal_pose
+  cb_type: 1
+  callee_idx: 5
+  msg_info:
+    type: geometry_msgs/PoseStamped
+    value:
+      header:
+        type: std_msgs/Header
+        value:
+          stamp:
+            type: builtin_interfaces/Time
+            value:
+              sec:
+                type: int32
+                value: null
+              nanosec:
+                type: uint32
+                value: null
+          frame_id:
+            type: string
+            value: null
+      pose:
+        type: geometry_msgs/Pose
+        value:
+          position:
+            type: geometry_msgs/Point
+            value:
+              x:
+                type: float64
+                value: null
+              y:
+                type: float64
+                value: null
+              z:
+                type: float64
+                value: null
+          orientation:
+            type: geometry_msgs/Quaternion
+            value:
+              x:
+                type: float64
+                value: null
+              y:
+                type: float64
+                value: null
+              z:
+                type: float64
+                value: null
+              w:
+                type: float64
+                value: null
+- callback_id: 6
+  name: navigate_through_poses
+  cb_type: 4
+  callee_idx: 1
+  msg_info:
+    type: nav2_msgs/NavigateThroughPoses
+    value:
+      poses:
+        type: vector[geometry_msgs/PoseStamped]
+        value:
+        - type: geometry_msgs/PoseStamped
+          value:
+            header:
+              type: std_msgs/Header
+              value:
+                stamp:
+                  type: builtin_interfaces/Time
+                  value:
+                    sec:
+                      type: int32
+                      value: null
+                    nanosec:
+                      type: uint32
+                      value: null
+                frame_id:
+                  type: string
+                  value: null
+            pose:
+              type: geometry_msgs/Pose
+              value:
+                position:
+                  type: geometry_msgs/Point
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                orientation:
+                  type: geometry_msgs/Quaternion
+                  value:
+                    x:
+                      type: float64
+                      value: null
+                    y:
+                      type: float64
+                      value: null
+                    z:
+                      type: float64
+                      value: null
+                    w:
+                      type: float64
+                      value: null
+      behavior_tree:
+        type: string
+        value: null

@@ -1,0 +1,310 @@
+# seed 01: scan -> match -> map  (multi-scan, 0.5m steps, downsampled 10 beams)
+#
+#   360-lidar(residual 0): angle_increment = 6.28000020980835/10 = 0.628000020980835
+
+pre_callbacks:
+  - callback_id: 3
+    topic: "/tf_static"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 0
+              nanosec: 0
+            frame_id: "base_footprint"
+          child_frame_id: "base_scan"
+          transform:
+            translation: {x: -0.032, y: 0.0, z: 0.172}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  - callback_id: 2
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 1
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation: {x: 0.0, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  - callback_id: 8
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 1
+          nanosec: 0
+        frame_id: "base_scan"
+      angle_min: 0.0
+      angle_max: 6.28000020980835
+      angle_increment: 0.628000020980835
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.11999999731779099
+      range_max: 3.5
+      ranges: [.inf, 1.003194808959961, 3.2037694454193115, 1.3756749629974365, 1.0383983850479126, 0.6203346848487854, 0.5253839492797852, 0.713688850402832, 1.5769628286361694, 0.963496208190918]
+      intensities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  - callback_id: 2
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 2
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation: {x: 0.5, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  - callback_id: 8
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 2
+          nanosec: 0
+        frame_id: "base_scan"
+      angle_min: 0.0
+      angle_max: 6.28000020980835
+      angle_increment: 0.628000020980835
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.11999999731779099
+      range_max: 3.5
+      ranges: [.inf, 0.9812061786651611, 3.1962342262268066, 1.4072818756103516, 1.0557770729064941, 0.6175523996353149, 0.5425838232040405, 0.7388117909431458, 1.5889328718185425, 0.9391253590583801]
+      intensities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  - callback_id: 2
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 3
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation: {x: 1.0, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  - callback_id: 8
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 3
+          nanosec: 0
+        frame_id: "base_scan"
+      angle_min: 0.0
+      angle_max: 6.28000020980835
+      angle_increment: 0.628000020980835
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.11999999731779099
+      range_max: 3.5
+      ranges: [.inf, 0.9450911283493042, 3.201758623123169, 1.4109395742416382, 1.0704691410064697, 0.6339277029037476, 0.5882964134216309, 0.7627878189086914, 1.5821589231491089, 0.9392237067222595]
+      intensities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  - callback_id: 2
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 4
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation: {x: 1.5, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  - callback_id: 8
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 4
+          nanosec: 0
+        frame_id: "base_scan"
+      angle_min: 0.0
+      angle_max: 6.28000020980835
+      angle_increment: 0.628000020980835
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.11999999731779099
+      range_max: 3.5
+      ranges: [.inf, 0.9511623978614807, 3.1736719608306885, 1.4152717590332031, 1.085081934928894, 0.6394151449203491, 0.556488037109375, 0.7864285111427307, 1.5758095979690552, 0.9264054298400879]
+      intensities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  - callback_id: 2
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 5
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation: {x: 2.0, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  - callback_id: 8
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 5
+          nanosec: 0
+        frame_id: "base_scan"
+      angle_min: 0.0
+      angle_max: 6.28000020980835
+      angle_increment: 0.628000020980835
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.11999999731779099
+      range_max: 3.5
+      ranges: [.inf, 0.9737191796302795, 3.084988594055176, 1.3984053134918213, 1.0522500276565552, 0.6436516642570496, 0.5857592225074768, 0.7701805830001831, 1.6224647760391235, 0.9312842488288879]
+      intensities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  - callback_id: 2
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 6
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation: {x: 2.5, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  - callback_id: 8
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 6
+          nanosec: 0
+        frame_id: "base_scan"
+      angle_min: 0.0
+      angle_max: 6.28000020980835
+      angle_increment: 0.628000020980835
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.11999999731779099
+      range_max: 3.5
+      ranges: [.inf, 2.4325881004333496, 2.883157968521118, 1.3614437580108643, 1.0698050260543823, 0.6469932794570923, 0.5835568308830261, 0.8042131066322327, 1.6062082052230835, 0.9093078970909119]
+      intensities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  - callback_id: 2
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 7
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation: {x: 3.0, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  - callback_id: 8
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 7
+          nanosec: 0
+        frame_id: "base_scan"
+      angle_min: 0.0
+      angle_max: 6.28000020980835
+      angle_increment: 0.628000020980835
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.11999999731779099
+      range_max: 3.5
+      ranges: [.inf, 2.409468173980713, 2.672930955886841, 1.3458129167556763, 1.059675693511963, 0.6316949725151062, 0.5987897515296936, 0.8183139562606812, 1.837593674659729, 0.9308559894561768]
+      intensities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  - callback_id: 2
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 8
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation: {x: 3.5, y: 0.0, z: 0.0}
+            rotation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+target_callbacks:
+  - callback_id: 8
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 8
+          nanosec: 0
+        frame_id: "base_scan"
+      angle_min: 0.0
+      angle_max: 6.28000020980835
+      angle_increment: 0.628000020980835
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.11999999731779099
+      range_max: 3.5
+      ranges: [.inf, 2.4394936561584473, 2.5605175495147705, 1.339720368385315, 1.0690956115722656, 0.6181849241256714, 0.5882624387741089, 0.8387637734413147, 2.137312889099121, 0.9369533061981201]
+      intensities: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  - callback_id: 10
+    topic: "/map"
+    type: "nav_msgs/msg/OccupancyGrid"
+    optional: False
+    msg:
+      header:
+        stamp: {sec: 0, nanosec: 0}
+        frame_id: "map"
+      info:
+        map_load_time: {sec: 0, nanosec: 0}
+        resolution: 0.05
+        width: 0
+        height: 0
+        origin:
+          position: {x: 0.0, y: 0.0, z: 0.0}
+          orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+      data: []

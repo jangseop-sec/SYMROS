@@ -1,0 +1,1165 @@
+ERROR: ld.so: object '/home/ubuntu/symros/SYMROS/symros-libcxx/build/libsymros_sym_oracle.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Initializing symbolic runtime
+This is SymCC running with the simple backend
+For anything but debugging SymCC itself, you will want to use the QSYM backend instead (see README.md for build instructions)
+[symros_init] SymROSManager initialized
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+[symros_init] SymROSManager initialized
+[rcl_node_init] entry point node name=[behavior_server]
+[symros_create_service - start] behavior_server/get_parameters
+[symros_create_service] behavior_server/get_parameters
+symros_result$$new_srv$$0$$/behavior_server/get_parameters$$rcl_interfaces::srv::GetParameters
+[symros_add_service] new service is created [0]/behavior_server/get_parameters:rcl_interfaces::srv::GetParameters
+[symros_create_service - end] behavior_server/get_parameters
+[symros_create_service - start] behavior_server/get_parameter_types
+[symros_create_service] behavior_server/get_parameter_types
+symros_result$$new_srv$$1$$/behavior_server/get_parameter_types$$rcl_interfaces::srv::GetParameterTypes
+[symros_add_service] new service is created [1]/behavior_server/get_parameter_types:rcl_interfaces::srv::GetParameterTypes
+[symros_create_service - end] behavior_server/get_parameter_types
+[symros_create_service - start] behavior_server/set_parameters
+[symros_create_service] behavior_server/set_parameters
+symros_result$$new_srv$$2$$/behavior_server/set_parameters$$rcl_interfaces::srv::SetParameters
+[symros_add_service] new service is created [2]/behavior_server/set_parameters:rcl_interfaces::srv::SetParameters
+[symros_create_service - end] behavior_server/set_parameters
+[symros_create_service - start] behavior_server/set_parameters_atomically
+[symros_create_service] behavior_server/set_parameters_atomically
+symros_result$$new_srv$$3$$/behavior_server/set_parameters_atomically$$rcl_interfaces::srv::SetParametersAtomically
+[symros_add_service] new service is created [3]/behavior_server/set_parameters_atomically:rcl_interfaces::srv::SetParametersAtomically
+[symros_create_service - end] behavior_server/set_parameters_atomically
+[symros_create_service - start] behavior_server/describe_parameters
+[symros_create_service] behavior_server/describe_parameters
+symros_result$$new_srv$$4$$/behavior_server/describe_parameters$$rcl_interfaces::srv::DescribeParameters
+[symros_add_service] new service is created [4]/behavior_server/describe_parameters:rcl_interfaces::srv::DescribeParameters
+[symros_create_service - end] behavior_server/describe_parameters
+[symros_create_service - start] behavior_server/list_parameters
+[symros_create_service] behavior_server/list_parameters
+symros_result$$new_srv$$5$$/behavior_server/list_parameters$$rcl_interfaces::srv::ListParameters
+[symros_add_service] new service is created [5]/behavior_server/list_parameters:rcl_interfaces::srv::ListParameters
+[symros_create_service - end] behavior_server/list_parameters
+create_publisher called with topic: /parameter_events
+[debug] get parameter use_sim_time 
+[rcl_subscription_init] entry point: /parameter_events
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /parameter_events
+[symros_create_subscription] add subscription in database: /parameter_events
+symros_result$$new_sub$$0$$/parameter_events$$rcl_interfaces::msg::ParameterEvent
+[symros_add_subscription] new subscription is created [0]rcl_interfaces::msg::ParameterEvent
+symros_result$$new_param$$/bond_disable_heartbeat_timeout$$bool$$true
+
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$costmap_topic$$std::string$$local_costmap/costmap_raw
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$footprint_topic$$std::string$$local_costmap/published_footprint
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$cycle_frequency$$double$$10.000000
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$behavior_plugins$$std::vector<std::string>$$["spin", "backup", "drive_on_heading", "wait"]
+
+[rcl_publish] publish message: /parameter_events
+[debug] get_parameter behavior_plugins
+[debug] get_parameter - ok behavior_plugins
+symros_result$$new_param$$spin.plugin$$std::string$$nav2_behaviors/Spin
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$backup.plugin$$std::string$$nav2_behaviors/BackUp
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$drive_on_heading.plugin$$std::string$$nav2_behaviors/DriveOnHeading
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$wait.plugin$$std::string$$nav2_behaviors/Wait
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$global_frame$$std::string$$odom
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$robot_base_frame$$std::string$$base_link
+
+[rcl_publish] publish message: /parameter_events
+symros_result$$new_param$$transform_tolerance$$double$$0.100000
+
+[rcl_publish] publish message: /parameter_events
+[rcl_publish] publish message: /behavior_server/transition_event
+[rcl_node_init] entry point node name=[_]
+[debug] get parameter use_sim_time 
+[rcl_subscription_init] entry point: /parameter_events
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /parameter_events
+[symros_create_subscription] add subscription in database: /parameter_events
+symros_result$$new_sub$$1$$/parameter_events$$rcl_interfaces::msg::ParameterEvent
+[symros_add_subscription] new subscription is created [1]rcl_interfaces::msg::ParameterEvent
+symros_result$$new_param$$qos_overrides./parameter_events.publisher.durability$$std::string$$volatile
+
+symros_result$$new_param$$qos_overrides./parameter_events.publisher.history$$std::string$$keep_last
+
+symros_result$$new_param$$qos_overrides./parameter_events.publisher.depth$$int64_t$$1000
+
+symros_result$$new_param$$qos_overrides./parameter_events.publisher.reliability$$std::string$$reliable
+
+symros_result$$new_param$$qos_overrides./tf.subscription.durability$$std::string$$volatile
+
+symros_result$$new_param$$qos_overrides./tf.subscription.history$$std::string$$keep_last
+
+symros_result$$new_param$$qos_overrides./tf.subscription.depth$$int64_t$$100
+
+symros_result$$new_param$$qos_overrides./tf.subscription.reliability$$std::string$$reliable
+
+[rcl_subscription_init] entry point: /tf
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /tf
+[symros_create_subscription] add subscription in database: /tf
+symros_result$$new_sub$$2$$/tf$$tf2_msgs::msg::TFMessage
+[symros_add_subscription] new subscription is created [2]tf2_msgs::msg::TFMessage
+symros_result$$new_param$$qos_overrides./tf_static.subscription.history$$std::string$$keep_last
+
+symros_result$$new_param$$qos_overrides./tf_static.subscription.depth$$int64_t$$100
+
+symros_result$$new_param$$qos_overrides./tf_static.subscription.reliability$$std::string$$reliable
+
+[rcl_subscription_init] entry point: /tf_static
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: /tf_static
+[symros_create_subscription] add subscription in database: /tf_static
+symros_result$$new_sub$$3$$/tf_static$$tf2_msgs::msg::TFMessage
+[symros_add_subscription] new subscription is created [3]tf2_msgs::msg::TFMessage
+[debug] get_parameter costmap_topic
+[debug] get_parameter - ok costmap_topic
+[debug] get_parameter footprint_topic
+[debug] get_parameter - ok footprint_topic
+[debug] get_parameter transform_tolerance
+[debug] get_parameter - ok transform_tolerance
+[debug] get_parameter robot_base_frame
+[debug] get_parameter - ok robot_base_frame
+[rcl_subscription_init] entry point: local_costmap/costmap_raw
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: local_costmap/costmap_raw
+[symros_create_subscription] add subscription in database: local_costmap/costmap_raw
+symros_result$$new_sub$$4$$/local_costmap/costmap_raw$$nav2_msgs::msg::Costmap
+[symros_add_subscription] new subscription is created [4]nav2_msgs::msg::Costmap
+[rcl_subscription_init] entry point: local_costmap/published_footprint
+[rcl_subscription_init] fini
+[symros_create_subscription] detail::create_subscription: local_costmap/published_footprint
+[symros_create_subscription] add subscription in database: local_costmap/published_footprint
+symros_result$$new_sub$$5$$/local_costmap/published_footprint$$geometry_msgs::msg::PolygonStamped
+[symros_add_subscription] new subscription is created [5]geometry_msgs::msg::PolygonStamped
+[debug] get_parameter spin.plugin
+[debug] get_parameter - ok spin.plugin
+[debug] get_parameter cycle_frequency
+[debug] get_parameter - ok cycle_frequency
+[debug] get_parameter global_frame
+[debug] get_parameter - ok global_frame
+[debug] get_parameter robot_base_frame
+[debug] get_parameter - ok robot_base_frame
+[debug] get_parameter transform_tolerance
+[debug] get_parameter - ok transform_tolerance
+[symros_create_action_server] spin
+symros_result$$new_action_srv$$0$$spin$$::
+[symros_add_action_server] new action server is created [0]spin:::
+create_publisher called with topic: cmd_vel
+[debug] get_parameter simulate_ahead_time
+[debug] get_parameter - ok simulate_ahead_time
+[debug] get_parameter max_rotational_vel
+[debug] get_parameter - ok max_rotational_vel
+[debug] get_parameter min_rotational_vel
+[debug] get_parameter - ok min_rotational_vel
+[debug] get_parameter rotational_acc_lim
+[debug] get_parameter - ok rotational_acc_lim
+[debug] get_parameter backup.plugin
+[debug] get_parameter - ok backup.plugin
+[debug] get_parameter cycle_frequency
+[debug] get_parameter - ok cycle_frequency
+[debug] get_parameter global_frame
+[debug] get_parameter - ok global_frame
+[debug] get_parameter robot_base_frame
+[debug] get_parameter - ok robot_base_frame
+[debug] get_parameter transform_tolerance
+[debug] get_parameter - ok transform_tolerance
+[symros_create_action_server] backup
+symros_result$$new_action_srv$$1$$backup$$::
+[symros_add_action_server] new action server is created [1]backup:::
+create_publisher called with topic: cmd_vel
+[debug] get_parameter simulate_ahead_time
+[debug] get_parameter - ok simulate_ahead_time
+[debug] get_parameter backup.acceleration_limit
+[debug] get_parameter - ok backup.acceleration_limit
+[debug] get_parameter backup.deceleration_limit
+[debug] get_parameter - ok backup.deceleration_limit
+[debug] get_parameter backup.minimum_speed
+[debug] get_parameter - ok backup.minimum_speed
+[debug] get_parameter drive_on_heading.plugin
+[debug] get_parameter - ok drive_on_heading.plugin
+[debug] get_parameter cycle_frequency
+[debug] get_parameter - ok cycle_frequency
+[debug] get_parameter global_frame
+[debug] get_parameter - ok global_frame
+[debug] get_parameter robot_base_frame
+[debug] get_parameter - ok robot_base_frame
+[debug] get_parameter transform_tolerance
+[debug] get_parameter - ok transform_tolerance
+[symros_create_action_server] drive_on_heading
+symros_result$$new_action_srv$$2$$drive_on_heading$$::
+[symros_add_action_server] new action server is created [2]drive_on_heading:::
+create_publisher called with topic: cmd_vel
+[debug] get_parameter simulate_ahead_time
+[debug] get_parameter - ok simulate_ahead_time
+[debug] get_parameter drive_on_heading.acceleration_limit
+[debug] get_parameter - ok drive_on_heading.acceleration_limit
+[debug] get_parameter drive_on_heading.deceleration_limit
+[debug] get_parameter - ok drive_on_heading.deceleration_limit
+[debug] get_parameter drive_on_heading.minimum_speed
+[debug] get_parameter - ok drive_on_heading.minimum_speed
+[debug] get_parameter wait.plugin
+[debug] get_parameter - ok wait.plugin
+[debug] get_parameter cycle_frequency
+[debug] get_parameter - ok cycle_frequency
+[debug] get_parameter global_frame
+[debug] get_parameter - ok global_frame
+[debug] get_parameter robot_base_frame
+[debug] get_parameter - ok robot_base_frame
+[debug] get_parameter transform_tolerance
+[debug] get_parameter - ok transform_tolerance
+[symros_create_action_server] wait
+symros_result$$new_action_srv$$3$$wait$$::
+[symros_add_action_server] new action server is created [3]wait:::
+create_publisher called with topic: cmd_vel
+[rcl_publish] publish message: /behavior_server/transition_event
+[symros_init] SymROSManager initialized
+[symros_get_sub] get subscription
+6
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /local_costmap/costmap_raw
+[symros] sub_idx[5] : /local_costmap/published_footprint
+[symros_get_sub] return subscription
+[symros_get_sub] get subscription
+6
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /local_costmap/costmap_raw
+[symros] sub_idx[5] : /local_costmap/published_footprint
+[symros_get_sub] return subscription
+[symros_get_sub] get subscription
+6
+[symros] sub_idx[0] : /parameter_events
+[symros] sub_idx[1] : /parameter_events
+[symros] sub_idx[2] : /tf
+[symros] sub_idx[3] : /tf_static
+[symros] sub_idx[4] : /local_costmap/costmap_raw
+[symros] sub_idx[5] : /local_costmap/published_footprint
+[symros_get_sub] return subscription
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+[symros] callback.dispatch
+[symros] callback.dispatch finished
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+[rcl_publish] publish message: /behavior_server/transition_event
+[rcl_publish] publish message: /behavior_server/transition_event
+
+===== START CALLBACK TEST =====
+
+==== SYMBOLIC BARRIER START ====
+Trying to solve:
+Location:0.0.0.include/c++/v1/string.1860
+SMT:(declare-fun msg_2_header_frame_id_string_size__1275 () (_ BitVec 8))
+(assert (bvule (concat #x00000000000000 msg_2_header_frame_id_string_size__1275)
+       #xffffffffffffffef))
+
+====end of smt====
+Trying to solve:
+Location:1.0.1.include/c++/v1/string.1863
+SMT:(declare-fun msg_2_header_frame_id_string_size__1275 () (_ BitVec 8))
+(assert (not (bvule #x17 msg_2_header_frame_id_string_size__1275)))
+
+====end of smt====
+Trying to solve:
+Location:2.0.0.include/c++/v1/string.1876
+SMT:(declare-fun msg_2_header_frame_id_string_size__1275 () (_ BitVec 8))
+(assert (not (= msg_2_header_frame_id_string_size__1275 #x00)))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.include/c++/v1/string.1860
+SMT:(declare-fun msg_2_metadata_layer_string_size__1356 () (_ BitVec 8))
+(assert (bvule (concat #x00000000000000 msg_2_metadata_layer_string_size__1356)
+       #xffffffffffffffef))
+
+====end of smt====
+Trying to solve:
+Location:1.0.1.include/c++/v1/string.1863
+SMT:(declare-fun msg_2_metadata_layer_string_size__1356 () (_ BitVec 8))
+(assert (not (bvule #x17 msg_2_metadata_layer_string_size__1356)))
+
+====end of smt====
+Trying to solve:
+Location:2.0.0.include/c++/v1/string.1876
+SMT:(declare-fun msg_2_metadata_layer_string_size__1356 () (_ BitVec 8))
+(assert (not (= msg_2_metadata_layer_string_size__1356 #x00)))
+
+====end of smt====
+
+==== SYMBOLIC BARRIER STOP ====
+[symros] callback.dispatch
+[symros] callback.dispatch finished
+
+==== SYMBOLIC BARRIER START ====
+Trying to solve:
+Location:0.0.0.include/c++/v1/string.1860
+SMT:(declare-fun msg_3_header_frame_id_string_size__1598 () (_ BitVec 8))
+(assert (bvule (concat #x00000000000000 msg_3_header_frame_id_string_size__1598)
+       #xffffffffffffffef))
+
+====end of smt====
+Trying to solve:
+Location:1.0.1.include/c++/v1/string.1863
+SMT:(declare-fun msg_3_header_frame_id_string_size__1598 () (_ BitVec 8))
+(assert (not (bvule #x17 msg_3_header_frame_id_string_size__1598)))
+
+====end of smt====
+Trying to solve:
+Location:2.0.0.include/c++/v1/string.1876
+SMT:(declare-fun msg_3_header_frame_id_string_size__1598 () (_ BitVec 8))
+(assert (not (= msg_3_header_frame_id_string_size__1598 #x00)))
+
+====end of smt====
+
+==== SYMBOLIC BARRIER STOP ====
+[symros] callback.dispatch
+[symros] callback.dispatch finished
+
+==== SYMBOLIC BARRIER START ====
+
+==== SYMBOLIC BARRIER STOP ====
+Trying to solve:
+Location:0.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.62
+SMT:(declare-fun act_req_4_target_y__1720 () (_ BitVec 8))
+(declare-fun act_req_4_target_y__1721 () (_ BitVec 8))
+(declare-fun act_req_4_target_y__1722 () (_ BitVec 8))
+(declare-fun act_req_4_target_y__1723 () (_ BitVec 8))
+(declare-fun act_req_4_target_y__1724 () (_ BitVec 8))
+(declare-fun act_req_4_target_y__1725 () (_ BitVec 8))
+(declare-fun act_req_4_target_y__1726 () (_ BitVec 8))
+(declare-fun act_req_4_target_y__1727 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53)
+                              (concat act_req_4_target_y__1727
+                                      act_req_4_target_y__1726
+                                      act_req_4_target_y__1725
+                                      act_req_4_target_y__1724
+                                      act_req_4_target_y__1723
+                                      act_req_4_target_y__1722
+                                      act_req_4_target_y__1721
+                                      act_req_4_target_y__1720))))))
+  (not (or (fp.isNaN a!1) (not (fp.eq a!1 (_ +zero 11 53)))))))
+
+====end of smt====
+Trying to solve:
+Location:1.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.62
+SMT:(declare-fun act_req_4_target_z__1728 () (_ BitVec 8))
+(declare-fun act_req_4_target_z__1729 () (_ BitVec 8))
+(declare-fun act_req_4_target_z__1730 () (_ BitVec 8))
+(declare-fun act_req_4_target_z__1731 () (_ BitVec 8))
+(declare-fun act_req_4_target_z__1732 () (_ BitVec 8))
+(declare-fun act_req_4_target_z__1733 () (_ BitVec 8))
+(declare-fun act_req_4_target_z__1734 () (_ BitVec 8))
+(declare-fun act_req_4_target_z__1735 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53)
+                              (concat act_req_4_target_z__1735
+                                      act_req_4_target_z__1734
+                                      act_req_4_target_z__1733
+                                      act_req_4_target_z__1732
+                                      act_req_4_target_z__1731
+                                      act_req_4_target_z__1730
+                                      act_req_4_target_z__1729
+                                      act_req_4_target_z__1728))))))
+  (not (or (fp.isNaN a!1) (not (fp.eq a!1 (_ +zero 11 53)))))))
+
+====end of smt====
+Trying to solve:
+Location:2.0.1.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.70
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1712 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1713 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1714 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1715 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1716 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1717 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1718 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1719 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53)
+                              (concat act_req_4_target_x__1719
+                                      act_req_4_target_x__1718
+                                      act_req_4_target_x__1717
+                                      act_req_4_target_x__1716
+                                      act_req_4_target_x__1715
+                                      act_req_4_target_x__1714
+                                      act_req_4_target_x__1713
+                                      act_req_4_target_x__1712)))))
+      (a!2 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+  (= (ite (fp.lt (_ +zero 11 53) a!1) #b1 #b0)
+     (ite (fp.lt (_ +zero 11 53) ((_ to_fp 11 53) roundNearestTiesToEven a!2))
+          #b1
+          #b0))))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.../src/rclcpp/rclcpp/time.cpp.175
+SMT:(declare-fun act_req_4_time_allowance_nanosec__1744 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1745 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1746 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1747 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1740 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1741 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1742 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1743 () (_ BitVec 8))
+(assert (let ((a!1 ((_ extract 63 8)
+             (bvmul #x000000003b9aca00
+                    (concat ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            act_req_4_time_allowance_sec__1743
+                            act_req_4_time_allowance_sec__1742
+                            act_req_4_time_allowance_sec__1741
+                            act_req_4_time_allowance_sec__1740)))))
+(let ((a!2 (concat ((_ extract 63 8)
+                     (bvadd (concat a!1 #x00)
+                            (concat #x00000000
+                                    act_req_4_time_allowance_nanosec__1747
+                                    act_req_4_time_allowance_nanosec__1746
+                                    act_req_4_time_allowance_nanosec__1745
+                                    act_req_4_time_allowance_nanosec__1744)))
+                   act_req_4_time_allowance_nanosec__1744)))
+  (bvsle a!2 #x7ffc72815b397fff))))
+
+====end of smt====
+Trying to solve:
+Location:3.0.0.../src/rclcpp/rclcpp/time.cpp.198
+SMT:(declare-fun act_req_4_time_allowance_nanosec__1744 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1745 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1746 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1747 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1740 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1741 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1742 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1743 () (_ BitVec 8))
+(assert (let ((a!1 ((_ extract 63 8)
+             (bvmul #x000000003b9aca00
+                    (concat ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            act_req_4_time_allowance_sec__1743
+                            act_req_4_time_allowance_sec__1742
+                            act_req_4_time_allowance_sec__1741
+                            act_req_4_time_allowance_sec__1740)))))
+(let ((a!2 (concat ((_ extract 63 8)
+                     (bvadd (concat a!1 #x00)
+                            (concat #x00000000
+                                    act_req_4_time_allowance_nanosec__1747
+                                    act_req_4_time_allowance_nanosec__1746
+                                    act_req_4_time_allowance_nanosec__1745
+                                    act_req_4_time_allowance_nanosec__1744)))
+                   act_req_4_time_allowance_nanosec__1744)))
+  (bvsle #x80038d7ea4c68000
+         (concat ((_ extract 63 8) (bvadd #x00038d7ea4c68000 a!2))
+                 act_req_4_time_allowance_nanosec__1744)))))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.99
+SMT:(declare-fun act_req_4_time_allowance_nanosec__1744 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1745 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1746 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_nanosec__1747 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1740 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1741 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1742 () (_ BitVec 8))
+(declare-fun act_req_4_time_allowance_sec__1743 () (_ BitVec 8))
+(assert (let ((a!1 ((_ extract 63 8)
+             (bvmul #x000000003b9aca00
+                    (concat ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            ((_ extract 7 7) act_req_4_time_allowance_sec__1743)
+                            act_req_4_time_allowance_sec__1743
+                            act_req_4_time_allowance_sec__1742
+                            act_req_4_time_allowance_sec__1741
+                            act_req_4_time_allowance_sec__1740)))))
+(let ((a!2 (concat ((_ extract 63 8)
+                     (bvadd (concat a!1 #x00)
+                            (concat #x00000000
+                                    act_req_4_time_allowance_nanosec__1747
+                                    act_req_4_time_allowance_nanosec__1746
+                                    act_req_4_time_allowance_nanosec__1745
+                                    act_req_4_time_allowance_nanosec__1744)))
+                   act_req_4_time_allowance_nanosec__1744)))
+(let ((a!3 (bvadd #xfffc72815b398000
+                  (concat ((_ extract 63 8) (bvadd #x00038d7ea4c68000 a!2))
+                          act_req_4_time_allowance_nanosec__1744))))
+(let ((a!4 (fp.div roundNearestTiesToEven
+                   ((_ to_fp 11 53)
+                     roundNearestTiesToEven
+                     (concat ((_ extract 63 8) a!3)
+                             act_req_4_time_allowance_nanosec__1744))
+                   (fp #b0 #b10000011100 #xdcd6500000000))))
+(let ((a!5 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv a!4))))))
+(let ((a!6 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv a!5))))))
+  (not (fp.lt ((_ to_fp 11 53) (fp.to_ieee_bv a!6)) (_ +zero 11 53))))))))))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.SYMROS/symros-libcxx/include/symros_math.hpp.19
+SMT:(declare-fun act_req_4_target_x__1712 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1713 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1714 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1715 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1716 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1717 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1718 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1719 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53)
+                              (concat act_req_4_target_x__1719
+                                      act_req_4_target_x__1718
+                                      act_req_4_target_x__1717
+                                      act_req_4_target_x__1716
+                                      act_req_4_target_x__1715
+                                      act_req_4_target_x__1714
+                                      act_req_4_target_x__1713
+                                      act_req_4_target_x__1712))))))
+(let ((a!2 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv a!1))))))
+  (not (fp.lt ((_ to_fp 11 53) (fp.to_ieee_bv a!2)) (_ +zero 11 53))))))
+
+====end of smt====
+Trying to solve:
+Location:3.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.123
+SMT:(declare-fun act_req_4_target_x__1712 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1713 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1714 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1715 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1716 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1717 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1718 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1719 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53)
+                              (concat act_req_4_target_x__1719
+                                      act_req_4_target_x__1718
+                                      act_req_4_target_x__1717
+                                      act_req_4_target_x__1716
+                                      act_req_4_target_x__1715
+                                      act_req_4_target_x__1714
+                                      act_req_4_target_x__1713
+                                      act_req_4_target_x__1712))))))
+(let ((a!2 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv a!1))))))
+  (not (fp.leq ((_ to_fp 11 53) (fp.to_ieee_bv a!2)) (_ +zero 11 53))))))
+
+====end of smt====
+Trying to solve:
+Location:0.0.0.SYMROS/symros-libcxx/include/symros_math.hpp.19
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!1))))))
+(let ((a!3 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53) a!2))))))
+  (not (fp.lt ((_ to_fp 11 53) a!3) (_ +zero 11 53)))))))
+
+====end of smt====
+Trying to solve:
+Location:10.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.157
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!1))))))
+(let ((a!3 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53) a!2))))))
+  (not (fp.lt ((_ to_fp 11 53) a!3) (_ +zero 11 53)))))))
+
+====end of smt====
+Trying to solve:
+Location:3004.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.201
+SMT:(declare-fun act_req_4_target_x__1712 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1713 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1714 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1715 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1716 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1717 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1718 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1719 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53)
+                              (concat act_req_4_target_x__1719
+                                      act_req_4_target_x__1718
+                                      act_req_4_target_x__1717
+                                      act_req_4_target_x__1716
+                                      act_req_4_target_x__1715
+                                      act_req_4_target_x__1714
+                                      act_req_4_target_x__1713
+                                      act_req_4_target_x__1712))))))
+(let ((a!2 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv a!1))))))
+(let ((a!3 (or (fp.eq (fp.add roundNearestTiesToEven
+                              (fp.abs a!2)
+                              (_ -zero 11 53))
+                      (_ +oo 11 53))
+               (fp.eq (fp.add roundNearestTiesToEven
+                              (fp.abs a!2)
+                              (_ -zero 11 53))
+                      (_ -oo 11 53)))))
+  (not a!3)))))
+
+====end of smt====
+Trying to solve:
+Location:3010.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.207
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!1))))))
+(let ((a!3 (or (fp.eq (fp.mul roundNearestTiesToEven
+                              ((_ to_fp 11 53) a!2)
+                              (_ +zero 11 53))
+                      (_ +oo 11 53))
+               (fp.eq (fp.mul roundNearestTiesToEven
+                              ((_ to_fp 11 53) a!2)
+                              (_ +zero 11 53))
+                      (_ -oo 11 53)))))
+  (not a!3)))))
+
+====end of smt====
+Trying to solve:
+Location:3012.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.208
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!1))))))
+(let ((a!3 ((_ to_fp 11 53)
+             (fp.to_ieee_bv (fp.mul roundNearestTiesToEven
+                                    ((_ to_fp 11 53) a!2)
+                                    (_ +zero 11 53))))))
+  (not (or (fp.eq (fp.mul roundNearestTiesToEven
+                          a!3
+                          (fp #b0 #b01111111111 #x0000000000000))
+                  (_ +oo 11 53))
+           (fp.eq (fp.mul roundNearestTiesToEven
+                          a!3
+                          (fp #b0 #b01111111111 #x0000000000000))
+                  (_ -oo 11 53))))))))
+
+====end of smt====
+Trying to solve:
+Location:3014.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.208
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!1))))))
+(let ((a!3 ((_ to_fp 11 53)
+             (fp.to_ieee_bv (fp.mul roundNearestTiesToEven
+                                    ((_ to_fp 11 53) a!2)
+                                    (_ +zero 11 53))))))
+(let ((a!4 (or (fp.eq (fp.add roundNearestTiesToEven
+                              (fp #b0 #b01111111111 #x8000000000000)
+                              (fp.mul roundNearestTiesToEven
+                                      a!3
+                                      (fp #b0 #b01111111111 #x0000000000000)))
+                      (_ +oo 11 53))
+               (fp.eq (fp.add roundNearestTiesToEven
+                              (fp #b0 #b01111111111 #x8000000000000)
+                              (fp.mul roundNearestTiesToEven
+                                      a!3
+                                      (fp #b0 #b01111111111 #x0000000000000)))
+                      (_ -oo 11 53)))))
+  (not a!4))))))
+
+====end of smt====
+Trying to solve:
+Location:3016.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.209
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!1))))))
+(let ((a!3 ((_ to_fp 11 53)
+             (fp.to_ieee_bv (fp.mul roundNearestTiesToEven
+                                    ((_ to_fp 11 53) a!2)
+                                    (_ +zero 11 53))))))
+  (not (or (fp.eq (fp.mul roundNearestTiesToEven a!3 (_ +zero 11 53))
+                  (_ +oo 11 53))
+           (fp.eq (fp.mul roundNearestTiesToEven a!3 (_ +zero 11 53))
+                  (_ -oo 11 53))))))))
+
+====end of smt====
+Trying to solve:
+Location:3018.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.209
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!1))))))
+(let ((a!3 ((_ to_fp 11 53)
+             (fp.to_ieee_bv (fp.mul roundNearestTiesToEven
+                                    ((_ to_fp 11 53) a!2)
+                                    (_ +zero 11 53))))))
+(let ((a!4 (or (fp.eq (fp.add roundNearestTiesToEven
+                              (fp #b0 #b01111111111 #x0000000000000)
+                              (fp.mul roundNearestTiesToEven
+                                      a!3
+                                      (_ +zero 11 53)))
+                      (_ +oo 11 53))
+               (fp.eq (fp.add roundNearestTiesToEven
+                              (fp #b0 #b01111111111 #x0000000000000)
+                              (fp.mul roundNearestTiesToEven
+                                      a!3
+                                      (_ +zero 11 53)))
+                      (_ -oo 11 53)))))
+  (not a!4))))))
+
+====end of smt====
+Trying to solve:
+Location:3020.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.212
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1712 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1713 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1714 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1715 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1716 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1717 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1718 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1719 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53)
+                              (concat act_req_4_target_x__1719
+                                      act_req_4_target_x__1718
+                                      act_req_4_target_x__1717
+                                      act_req_4_target_x__1716
+                                      act_req_4_target_x__1715
+                                      act_req_4_target_x__1714
+                                      act_req_4_target_x__1713
+                                      act_req_4_target_x__1712)))))
+      (a!4 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv a!1)))))
+      (a!5 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!4))))))
+(let ((a!3 ((_ to_fp 11 53)
+             (fp.to_ieee_bv (fp.add roundNearestTiesToEven
+                                    (fp.abs a!2)
+                                    (_ -zero 11 53)))))
+      (a!6 ((_ to_fp 11 53)
+             (fp.to_ieee_bv (fp.mul roundNearestTiesToEven
+                                    ((_ to_fp 11 53) a!5)
+                                    (_ +zero 11 53))))))
+(let ((a!7 (fp.neg (fp.abs ((_ to_fp 11 53) (fp.to_ieee_bv a!6))))))
+  (not (or (fp.eq (fp.add roundNearestTiesToEven a!3 a!7) (_ +oo 11 53))
+           (fp.eq (fp.add roundNearestTiesToEven a!3 a!7) (_ -oo 11 53)))))))))
+
+====end of smt====
+Trying to solve:
+Location:1.0.0.src/navigation2/nav2_behaviors/include/nav2_behaviors/plugins/drive_on_heading.hpp.212
+SMT:(declare-fun act_req_4_speed__1736 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1737 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1738 () (_ BitVec 8))
+(declare-fun act_req_4_speed__1739 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1712 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1713 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1714 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1715 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1716 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1717 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1718 () (_ BitVec 8))
+(declare-fun act_req_4_target_x__1719 () (_ BitVec 8))
+(assert (let ((a!1 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53)
+                              (concat act_req_4_target_x__1719
+                                      act_req_4_target_x__1718
+                                      act_req_4_target_x__1717
+                                      act_req_4_target_x__1716
+                                      act_req_4_target_x__1715
+                                      act_req_4_target_x__1714
+                                      act_req_4_target_x__1713
+                                      act_req_4_target_x__1712)))))
+      (a!4 ((_ to_fp 8 24)
+             (fp.to_ieee_bv ((_ to_fp 8 24)
+                              (concat act_req_4_speed__1739
+                                      act_req_4_speed__1738
+                                      act_req_4_speed__1737
+                                      act_req_4_speed__1736))))))
+(let ((a!2 ((_ to_fp 11 53)
+             (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv a!1)))))
+      (a!5 (fp.to_ieee_bv ((_ to_fp 11 53)
+                            (fp.to_ieee_bv ((_ to_fp 11 53)
+                                             roundNearestTiesToEven
+                                             a!4))))))
+(let ((a!3 ((_ to_fp 11 53)
+             (fp.to_ieee_bv (fp.add roundNearestTiesToEven
+                                    (fp.abs a!2)
+                                    (_ -zero 11 53)))))
+      (a!6 ((_ to_fp 11 53)
+             (fp.to_ieee_bv (fp.mul roundNearestTiesToEven
+                                    ((_ to_fp 11 53) a!5)
+                                    (_ +zero 11 53))))))
+(let ((a!7 (fp.neg (fp.abs ((_ to_fp 11 53) (fp.to_ieee_bv a!6))))))
+  (not (fp.leq (fp.add roundNearestTiesToEven a!3 a!7) (_ +zero 11 53))))))))
+
+====end of smt====
+Trying to solve:
+Location:1.0.1..-1
+SMT:(declare-fun msg_2_metadata_size_x__1428 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1427 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1426 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1425 () (_ BitVec 8))
+(assert (not (and (= msg_2_metadata_size_x__1425 #x00)
+          (= msg_2_metadata_size_x__1426 #x00)
+          (= msg_2_metadata_size_x__1427 #x00)
+          (= msg_2_metadata_size_x__1428 #x00))))
+
+====end of smt====
+Trying to solve:
+Location:2.0.1..-1
+SMT:(declare-fun msg_2_metadata_size_y__1432 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1431 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1430 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1429 () (_ BitVec 8))
+(assert (not (and (= msg_2_metadata_size_y__1429 #x00)
+          (= msg_2_metadata_size_y__1430 #x00)
+          (= msg_2_metadata_size_y__1431 #x00)
+          (= msg_2_metadata_size_y__1432 #x00))))
+
+====end of smt====
+Trying to solve:
+Location:1003.0.0.src/navigation2/nav2_costmap_2d/src/costmap_2d.cpp.107
+SMT:(declare-fun msg_2_metadata_size_y__1429 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1430 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1431 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1432 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1425 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1426 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1427 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1428 () (_ BitVec 8))
+(assert (let ((a!1 (= (bvsdiv_i (bvmul (concat msg_2_metadata_size_x__1428
+                                       msg_2_metadata_size_x__1427
+                                       msg_2_metadata_size_x__1426
+                                       msg_2_metadata_size_x__1425)
+                               (concat msg_2_metadata_size_y__1432
+                                       msg_2_metadata_size_y__1431
+                                       msg_2_metadata_size_y__1430
+                                       msg_2_metadata_size_y__1429))
+                        (concat msg_2_metadata_size_x__1428
+                                msg_2_metadata_size_x__1427
+                                msg_2_metadata_size_x__1426
+                                msg_2_metadata_size_x__1425))
+              (concat msg_2_metadata_size_y__1432
+                      msg_2_metadata_size_y__1431
+                      msg_2_metadata_size_y__1430
+                      msg_2_metadata_size_y__1429)))
+      (a!3 (not (bvule (concat msg_2_metadata_size_x__1428
+                               msg_2_metadata_size_x__1427
+                               msg_2_metadata_size_x__1426
+                               msg_2_metadata_size_x__1425)
+                       (bvudiv_i #xffffffff
+                                 (concat msg_2_metadata_size_y__1432
+                                         msg_2_metadata_size_y__1431
+                                         msg_2_metadata_size_y__1430
+                                         msg_2_metadata_size_y__1429))))))
+(let ((a!2 (and (not (and (= msg_2_metadata_size_x__1425 #x00)
+                          (= msg_2_metadata_size_x__1426 #x00)
+                          (= msg_2_metadata_size_x__1427 #x00)
+                          (= msg_2_metadata_size_x__1428 #x00)))
+                (not a!1)))
+      (a!4 (and (not (and (= msg_2_metadata_size_y__1429 #x00)
+                          (= msg_2_metadata_size_y__1430 #x00)
+                          (= msg_2_metadata_size_y__1431 #x00)
+                          (= msg_2_metadata_size_y__1432 #x00)))
+                a!3)))
+  (not (or a!2 a!4)))))
+
+====end of smt====
+Trying to solve:
+Location:0.0.1..-1
+SMT:(declare-fun msg_2_metadata_size_x__1428 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1427 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1426 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1425 () (_ BitVec 8))
+(assert (not (and (= msg_2_metadata_size_x__1425 #x00)
+          (= msg_2_metadata_size_x__1426 #x00)
+          (= msg_2_metadata_size_x__1427 #x00)
+          (= msg_2_metadata_size_x__1428 #x00))))
+
+====end of smt====
+Trying to solve:
+Location:1.0.1..-1
+SMT:(declare-fun msg_2_metadata_size_y__1432 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1431 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1430 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1429 () (_ BitVec 8))
+(assert (not (and (= msg_2_metadata_size_y__1429 #x00)
+          (= msg_2_metadata_size_y__1430 #x00)
+          (= msg_2_metadata_size_y__1431 #x00)
+          (= msg_2_metadata_size_y__1432 #x00))))
+
+====end of smt====
+Trying to solve:
+Location:1002.0.0.src/navigation2/nav2_costmap_2d/src/costmap_2d.cpp.129
+SMT:(declare-fun msg_2_metadata_size_y__1429 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1430 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1431 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1432 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1425 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1426 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1427 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1428 () (_ BitVec 8))
+(assert (let ((a!1 (= (bvsdiv_i (bvmul (concat msg_2_metadata_size_x__1428
+                                       msg_2_metadata_size_x__1427
+                                       msg_2_metadata_size_x__1426
+                                       msg_2_metadata_size_x__1425)
+                               (concat msg_2_metadata_size_y__1432
+                                       msg_2_metadata_size_y__1431
+                                       msg_2_metadata_size_y__1430
+                                       msg_2_metadata_size_y__1429))
+                        (concat msg_2_metadata_size_x__1428
+                                msg_2_metadata_size_x__1427
+                                msg_2_metadata_size_x__1426
+                                msg_2_metadata_size_x__1425))
+              (concat msg_2_metadata_size_y__1432
+                      msg_2_metadata_size_y__1431
+                      msg_2_metadata_size_y__1430
+                      msg_2_metadata_size_y__1429)))
+      (a!3 (not (bvule (concat msg_2_metadata_size_x__1428
+                               msg_2_metadata_size_x__1427
+                               msg_2_metadata_size_x__1426
+                               msg_2_metadata_size_x__1425)
+                       (bvudiv_i #xffffffff
+                                 (concat msg_2_metadata_size_y__1432
+                                         msg_2_metadata_size_y__1431
+                                         msg_2_metadata_size_y__1430
+                                         msg_2_metadata_size_y__1429))))))
+(let ((a!2 (and (not (and (= msg_2_metadata_size_x__1425 #x00)
+                          (= msg_2_metadata_size_x__1426 #x00)
+                          (= msg_2_metadata_size_x__1427 #x00)
+                          (= msg_2_metadata_size_x__1428 #x00)))
+                (not a!1)))
+      (a!4 (and (not (and (= msg_2_metadata_size_y__1429 #x00)
+                          (= msg_2_metadata_size_y__1430 #x00)
+                          (= msg_2_metadata_size_y__1431 #x00)
+                          (= msg_2_metadata_size_y__1432 #x00)))
+                a!3)))
+  (not (or a!2 a!4)))))
+
+====end of smt====
+Trying to solve:
+Location:6.0.1.src/navigation2/nav2_costmap_2d/src/costmap_subscriber.cpp.83
+SMT:(declare-fun msg_2_metadata_size_x__1428 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1427 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1426 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_x__1425 () (_ BitVec 8))
+(assert (not (and (= msg_2_metadata_size_x__1425 #x00)
+          (= msg_2_metadata_size_x__1426 #x00)
+          (= msg_2_metadata_size_x__1427 #x00)
+          (= msg_2_metadata_size_x__1428 #x00))))
+
+====end of smt====
+Trying to solve:
+Location:7.0.1.src/navigation2/nav2_costmap_2d/src/costmap_subscriber.cpp.84
+SMT:(declare-fun msg_2_metadata_size_y__1432 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1431 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1430 () (_ BitVec 8))
+(declare-fun msg_2_metadata_size_y__1429 () (_ BitVec 8))
+(assert (not (and (= msg_2_metadata_size_y__1429 #x00)
+          (= msg_2_metadata_size_y__1430 #x00)
+          (= msg_2_metadata_size_y__1431 #x00)
+          (= msg_2_metadata_size_y__1432 #x00))))
+
+====end of smt====
+./scripts/sym_install.bash: line 41: 1319589 Segmentation fault      OMP_NUM_THREADS=1 $WS/build/symros_exec/exec "$INPUT_FILE" "$STATE_MODE"

@@ -1,0 +1,33 @@
+#ifndef FPOVERFLOW_H
+#define FPOVERFLOW_H
+
+#include <llvm/IR/BasicBlock.h>
+#include <llvm/IR/IRBuilder.h>
+#include <llvm/IR/InstVisitor.h>
+#include <llvm/IR/Instructions.h>
+#include <llvm/IR/Metadata.h>
+#include <llvm/IR/ValueMap.h>
+#include <llvm/Support/raw_ostream.h>
+
+#include "Runtime.h"
+
+class FPOverflowChecker : public llvm::InstVisitor<FPOverflowChecker> {
+public:
+  explicit FPOverflowChecker(llvm::Module &M) : runtime(M) {}
+  void visitBinaryOperator(llvm::BinaryOperator &I);
+  void setMode(int mode);
+
+  const Runtime runtime;
+
+private:
+  llvm::Value *getOverflowCond(llvm::BinaryOperator &I, llvm::IRBuilder<> &IRB);
+  llvm::Value *getDividedByZeroCondition(llvm::BinaryOperator &I,
+                                         llvm::IRBuilder<> &IRB, bool is_div);
+
+  void addBoundCheckChain(llvm::BinaryOperator &I, llvm::IRBuilder<> &IRB, llvm::BasicBlock *EntryBB, llvm::BasicBlock *ExitBB);
+  void addEpsilonBoundCheckChain(llvm::BinaryOperator &I, llvm::IRBuilder<> &IRB, llvm::BasicBlock *EntryBB, llvm::BasicBlock *ExitBB);
+
+  int mode;
+};
+
+#endif

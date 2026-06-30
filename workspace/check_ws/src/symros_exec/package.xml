@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>symros_exec</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="anon@example.com">ubuntu</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- SYMROS dependencies -->
+<build_depend>nav2_common</build_depend>
+<build_depend>rclcpp</build_depend>
+<build_depend>rclcpp_action</build_depend>
+<build_depend>rclcpp_lifecycle</build_depend>
+<build_depend>nav2_behavior_tree</build_depend>
+<build_depend>nav2_util</build_depend>
+<build_depend>nav2_msgs</build_depend>
+<build_depend>nav_msgs</build_depend>
+<build_depend>tf2</build_depend>
+<build_depend>tf2_geometry_msgs</build_depend>
+<build_depend>geometry_msgs</build_depend>
+<build_depend>nav2_costmap_2d</build_depend>
+<build_depend>nav2_core</build_depend>
+<build_depend>pluginlib</build_depend>
+
+<depend>unique_identifier_msgs</depend>
+<depend>map_msgs</depend>
+<depend>actionlib_msgs</depend>
+<depend>visualization_msgs</depend>
+<depend>statistics_msgs</depend>
+<depend>action_msgs</depend>
+<depend>rmw_dds_common</depend>
+<depend>trajectory_msgs</depend>
+<depend>example_interfaces</depend>
+<depend>diagnostic_msgs</depend>
+<depend>tf2_msgs</depend>
+<depend>stereo_msgs</depend>
+<depend>shape_msgs</depend>
+<depend>std_msgs</depend>
+<depend>nav_2d_msgs</depend>
+<depend>rosgraph_msgs</depend>
+<depend>rosbag2_interfaces</depend>
+<depend>rcl_interfaces</depend>
+<depend>bond</depend>
+<depend>turtlesim</depend>
+<depend>builtin_interfaces</depend>
+<depend>dwb_msgs</depend>
+<depend>lifecycle_msgs</depend>
+<depend>sensor_msgs</depend>
+<depend>std_srvs</depend>
+<depend>nav2_behaviors</depend>
+
+<exec_depend>rclcpp</exec_depend>
+<exec_depend>rclcpp_action</exec_depend>
+<exec_depend>rclcpp_lifecycle</exec_depend>
+<exec_depend>nav2_behavior_tree</exec_depend>
+<exec_depend>nav2_util</exec_depend>
+<exec_depend>nav2_msgs</exec_depend>
+<exec_depend>nav_msgs</exec_depend>
+<exec_depend>geometry_msgs</exec_depend>
+<exec_depend>nav2_costmap_2d</exec_depend>
+<exec_depend>nav2_core</exec_depend>
+<exec_depend>pluginlib</exec_depend>
+
+<!-- SYMROS dependencies -->
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

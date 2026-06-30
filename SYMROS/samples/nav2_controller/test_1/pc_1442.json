@@ -1,0 +1,12 @@
+{
+    "input_id": 1442,
+    "parent_input_id": 532,
+    "location": "2.0.0.src/geometry2/tf2/src/buffer_core.cpp.346",
+    "solving_weight": 9,
+    "constraint": [
+        {
+            "location": "2.0.0.src/geometry2/tf2/src/buffer_core.cpp.346",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_3_header_stamp_nanosec__4215 () (_ BitVec 8))\n(declare-fun msg_3_header_stamp_nanosec__4216 () (_ BitVec 8))\n(declare-fun msg_3_header_stamp_nanosec__4217 () (_ BitVec 8))\n(declare-fun msg_3_header_stamp_nanosec__4218 () (_ BitVec 8))\n(declare-fun msg_3_header_stamp_sec__4211 () (_ BitVec 8))\n(declare-fun msg_3_header_stamp_sec__4212 () (_ BitVec 8))\n(declare-fun msg_3_header_stamp_sec__4213 () (_ BitVec 8))\n(declare-fun msg_3_header_stamp_sec__4214 () (_ BitVec 8))\n(assert\n (let ((?x87 (concat (_ bv0 32) msg_3_header_stamp_nanosec__4218 msg_3_header_stamp_nanosec__4217 msg_3_header_stamp_nanosec__4216 msg_3_header_stamp_nanosec__4215)))\n(let ((?x2689 ((_ extract 7 7) msg_3_header_stamp_sec__4214)))\n(let ((?x775 (concat ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 ?x2689 msg_3_header_stamp_sec__4214 msg_3_header_stamp_sec__4213 msg_3_header_stamp_sec__4212 msg_3_header_stamp_sec__4211)))\n(let ((?x2152 (concat ((_ extract 63 8) (bvmul (_ bv1000000000 64) ?x775)) (_ bv0 8))))\n(let (($x2845 (= msg_3_header_stamp_nanosec__4215 (_ bv0 8))))\n(let (($x483 (and $x2845 (= ((_ extract 63 8) (bvadd ?x2152 ?x87)) (_ bv0 56)))))\n(not $x483))))))))\n(check-sat)\n"
+        }
+    ]
+}

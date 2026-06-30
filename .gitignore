@@ -1,0 +1,55 @@
+# Build / install / log artifacts.
+# NOTE: anchored to known colcon/CMake roots on purpose — a bare recursive
+# `build/` or `log/` would also exclude legit third-party SOURCE dirs named
+# "build" (GraphicsMagick libtiff) or "log" (Fast-DDS), so do not use those.
+
+# ── colcon workspaces ───────────────────────────────────────────────────
+/workspace/*/build/
+/workspace/*/install/
+/workspace/*/log/
+
+# ── vendored ROS workspaces ─────────────────────────────────────────────
+/SYMROS/ros/*/humble/build/
+/SYMROS/ros/*/humble/install/
+/SYMROS/ros/*/humble/log/
+
+# ── SYMROS runtime logs ─────────────────────────────────────────────────
+/SYMROS/log/
+
+# ── CMake / Ninja build dirs ────────────────────────────────────────────
+/SYMROS/symcc/build/
+/SYMROS/symcc/build_check/
+/SYMROS/clang-util/build/
+/external/GeographicLib/build/
+/llvm-project/build/
+
+# ── ros-nodds build outputs (regenerate with ros-nodds/build.sh; >100MB) ─
+/SYMROS/ros-nodds/build-conc/
+/SYMROS/ros-nodds/build-sym/
+
+# ── compiler / build intermediates (always artifacts) ───────────────────
+*.o
+*.lo
+.libs/
+.deps/
+.ninja_deps
+.ninja_log
+
+# ── Python ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ── coverage / profiling ────────────────────────────────────────────────
+*.profraw
+*.profdata
+
+# ── temp / editor / OS ──────────────────────────────────────────────────
+core
+core.*
+*.tmp
+*.swp
+*~
+.vscode/
+.idea/
+.DS_Store

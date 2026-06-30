@@ -1,0 +1,47 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+result*
+!results/.gitkeep
+
+# SYMCC .gitignore (build results)
+build/
+log/
+install/
+
+# llvm-cov
+*.profraw
+*.profdata
+ 
+# ROS2 libraris
+ros/
+
+# clang util result
+clang-util/result/
+llvm-12/
+# tmp folder
+tmp/*
+!tmp/.gitkeep
+.vscode
+
+# grater tmp folder
+output/*
+!output/.gitkeep
+smts/*
+!smts/.gitkeep
+checksat/*
+!checksat/.gitkeep
+
+objective_functions.py
+
+# core dump
+core.*
+
+symros.log
+
+# test file
+test/*
+
+cov_check.py

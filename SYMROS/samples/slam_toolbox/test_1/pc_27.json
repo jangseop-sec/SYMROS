@@ -1,0 +1,22 @@
+{
+    "input_id": 27,
+    "parent_input_id": 0,
+    "location": "40.0.1.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5701",
+    "solving_weight": 39,
+    "constraint": [
+        {
+            "smt": "(declare-fun msg_16_ranges_2__4242 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4243 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4244 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4245 () (_ BitVec 8))\n(assert (let ((a!1 ((_ to_fp 8 24)\n             (fp.to_ieee_bv ((_ to_fp 8 24)\n                              (concat msg_16_ranges_2__4245\n                                      msg_16_ranges_2__4244\n                                      msg_16_ranges_2__4243\n                                      msg_16_ranges_2__4242))))))\n(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)\n                            (fp.to_ieee_bv ((_ to_fp 11 53)\n                                             roundNearestTiesToEven\n                                             a!1))))))\n  (and (fp.leq ((_ to_fp 11 53) a!2) (fp #b0 #b10000000000 #xc000000000000))\n       (fp.leq (fp #b0 #b01111111011 #xeb851e0000000) ((_ to_fp 11 53) a!2))))))\n\n",
+            "location": "4.0.0.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5664",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_16_ranges_2__4242 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4243 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4244 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4245 () (_ BitVec 8))\n(assert (let ((a!1 ((_ to_fp 8 24)\n             (fp.to_ieee_bv ((_ to_fp 8 24)\n                              (concat msg_16_ranges_2__4245\n                                      msg_16_ranges_2__4244\n                                      msg_16_ranges_2__4243\n                                      msg_16_ranges_2__4242))))))\n(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)\n                            (fp.to_ieee_bv ((_ to_fp 11 53)\n                                             roundNearestTiesToEven\n                                             a!1))))))\n(let ((a!3 (fp.to_ieee_bv (fp.add roundNearestTiesToEven\n                                  (fp #b0 #b10000000000 #x59c058957c8d7)\n                                  (fp.mul roundNearestTiesToEven\n                                          ((_ to_fp 11 53) a!2)\n                                          (fp #b1 #b01111111001 #x6727cb5ef370e))))))\n  (fp.lt ((_ to_fp 11 53) a!3) (fp #b0 #b10000000000 #x59c058957c8d7))))))\n\n",
+            "location": "39.0.0.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5701",
+            "dependencies": []
+        },
+        {
+            "location": "40.0.1.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5701",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_16_ranges_2__4242 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4243 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4244 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4245 () (_ BitVec 8))\n(assert\n (let ((?x307 (fp (_ bv0 1) (_ bv1021 11) (_ bv1069437478316880 52))))\n(let ((?x290 (concat msg_16_ranges_2__4245 msg_16_ranges_2__4244 msg_16_ranges_2__4243 msg_16_ranges_2__4242)))\n(let ((?x67 (fp.to_ieee_bv ((_ to_fp 11 53) roundNearestTiesToEven ((_ to_fp 8 24) (fp.to_ieee_bv ((_ to_fp 8 24) ?x290)))))))\n(let ((?x294 ((_ to_fp 11 53) (fp.to_ieee_bv ((_ to_fp 11 53) ?x67)))))\n(let ((?x312 (fp.add roundNearestTiesToEven ?x307 (fp.mul roundNearestTiesToEven ?x294 (fp (_ bv0 1) (_ bv1022 11) (_ bv4501435230021110 52))))))\n(let (($x214 (not (fp.lt ((_ to_fp 11 53) (fp.to_ieee_bv ?x312)) ?x307))))\n(not $x214))))))))\n(check-sat)\n"
+        }
+    ]
+}

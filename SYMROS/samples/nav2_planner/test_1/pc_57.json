@@ -1,0 +1,17 @@
+{
+    "input_id": 57,
+    "parent_input_id": 0,
+    "location": "4.0.1.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.273",
+    "solving_weight": 7,
+    "constraint": [
+        {
+            "smt": "(declare-fun msg_2_data_20__2162 () (_ BitVec 8))\n(assert (not (= msg_2_data_20__2162 #xff)))\n\n",
+            "location": "3.0.1.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.271",
+            "dependencies": []
+        },
+        {
+            "location": "4.0.1.src/navigation2/nav2_costmap_2d/plugins/static_layer.cpp.273",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_2_data_20__2162 () (_ BitVec 8))\n(assert\n (let (($x402 (bvsle (_ bv100 32) (concat (_ bv0 24) msg_2_data_20__2162))))\n(let (($x188 (not $x402)))\n(not $x188))))\n(check-sat)\n"
+        }
+    ]
+}

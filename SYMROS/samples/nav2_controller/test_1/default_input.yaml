@@ -1,0 +1,237 @@
+pre_callbacks:
+  - callback_id: 2
+    topic: "/tf_static"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 0
+              nanosec: 0
+            frame_id: "map"
+          child_frame_id: "odom"
+          transform:
+            translation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+            rotation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 1.0
+        - header:
+            stamp:
+              sec: 0
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_link"
+          transform:
+            translation:
+              x: 3.4
+              y: 2.9
+              z: 0.0
+            rotation:
+              x: 0.0
+              y: 0.0
+              z: 0.7071068
+              w: 0.7071068
+  - callback_id: 0
+    optional: False
+target_callbacks:
+  - callback_id: 3
+    topic: "/map"
+    type: "nav_msgs/msg/OccupancyGrid"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "map"
+      info:
+        map_load_time:
+          sec: 0
+          nanosec: 0
+        resolution: 0.5
+        width: 10
+        height: 10
+        origin:
+          position:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+          orientation:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+            w: 1.0
+      data: [
+        100, 100, 100, 100, 100, 100, 100, 100, 100, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100,   0,   0,   0,   0,   0,   0,   0,   0, 100,
+        100, 100, 100, 100, 100, 100, 100, 100, 100, 100
+      ]
+  - callback_id: 4
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "base_link"
+      angle_min: -3.1415927          # -π
+      angle_max:  3.1415927          #  π
+      angle_increment: 1.5707963     #  π/2 → 5 rays
+      time_increment: 0.0
+      scan_time: 0.0
+      range_min: 0.1
+      range_max: 5.0
+      ranges: [2.0, 2.0, 2.0, 2.0, 2.0]
+      intensities: []
+  - callback_id: 5
+    topic: "/local_costmap/footprint"
+    type: "geometry_msgs/msg/Polygon"
+    optional: False
+    msg:
+      points:
+        - x: -0.1
+          y:  0.1
+          z:  0.0
+        - x:  0.1
+          y:  0.1
+          z:  0.0
+        - x:  0.1
+          y: -0.1
+          z:  0.0
+        - x: -0.1
+          y: -0.1
+          z:  0.0
+  - callback_id: 6
+    topic: "/local_costmap/get_costmap"
+    type: "nav2_msgs/srv/GetCostmap"
+    optional: True
+    msg:
+      specs:
+        map_load_time:
+          sec: 0
+          nanosec: 0
+        update_time:
+          sec: 0
+          nanosec: 0
+        layer: "master"
+        resolution: 0.5
+        size_x: 10
+        size_y: 10
+        origin:
+          position:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+          orientation:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+            w: 1.0
+  - callback_id: 7
+    topic: "/local_costmap/clear_except_local_costmap"
+    type: "nav2_msgs/srv/ClearCostmapExceptRegion"
+    optional: True
+    msg:
+      reset_distance: 0.0
+
+  - callback_id: 8
+    topic: "/local_costmap/clear_around_local_costmap"
+    type: "nav2_msgs/srv/ClearCostmapAroundRobot"
+    optional: True
+    msg:
+      reset_distance: 0.0
+
+  - callback_id: 9
+    topic: "/local_costmap/clear_entirely_local_costmap"
+    type: "nav2_msgs/srv/ClearEntireCostmap"
+    optional: True
+    msg:
+      request: {}
+  - callback_id: 10
+    topic: "/odom"
+    type: "nav_msgs/msg/Odometry"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "odom"
+      child_frame_id: "base_link"
+      pose:
+        pose:
+          position:
+            x: 3.4
+            y: 2.9
+            z: 0.0
+          orientation:
+            x: 0.0
+            y: 0.0
+            z: 0.7071068
+            w: 0.7071068
+        covariance:
+          [0.01, 0.0,  0.0,  0.0,  0.0,  0.0,
+           0.0,  0.01, 0.0,  0.0,  0.0,  0.0,
+           0.0,  0.0,  0.01, 0.0,  0.0,  0.0,
+           0.0,  0.0,  0.0,  0.01, 0.0,  0.0,
+           0.0,  0.0,  0.0,  0.0,  0.01, 0.0,
+           0.0,  0.0,  0.0,  0.0,  0.0,  0.01]
+      twist:
+        twist:
+          linear:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+          angular:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+        covariance:
+          [0.01, 0.0,  0.0,  0.0,  0.0,  0.0,
+           0.0,  0.01, 0.0,  0.0,  0.0,  0.0,
+           0.0,  0.0,  0.01, 0.0,  0.0,  0.0,
+           0.0,  0.0,  0.0,  0.01, 0.0,  0.0,
+           0.0,  0.0,  0.0,  0.0,  0.01, 0.0,
+           0.0,  0.0,  0.0,  0.0,  0.0,  0.01]
+  - callback_id: 11
+    topic: "follow_path"
+    type: "nav2_msgs/action/FollowPath"
+    optional: False
+    msg:
+      path:
+        header:
+          stamp:
+            sec: 0
+            nanosec: 0
+          frame_id: "map"
+        poses:
+          - header:
+              frame_id: "map"
+          - pose:
+              position:
+                x: 3.5
+                y: 3.0
+              orientation:
+                x: 0.0
+                y: 0.0
+                z: 0.7071068
+                w: 0.7071068
+      controller_id: "FollowPath"
+      goal_checker_id: "goal_checker"
+      speed_limit: 1.0
+      is_percentage: true

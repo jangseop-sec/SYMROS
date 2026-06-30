@@ -1,0 +1,63 @@
+pre_callbacks:
+  - callback_id: 2
+    topic: "/tf_static"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header: { stamp: { sec: 0, nanosec: 0 }, frame_id: "base_link" }
+          child_frame_id: "base_scan"
+          transform:
+            translation: { x: 0.0, y: 0.0, z: 0.1 }
+            rotation: { x: 0.0, y: 0.0, z: 0.0, w: 1.0 }
+
+  - callback_id: 1
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header: { stamp: { sec: 1, nanosec: 0 }, frame_id: "map" }
+          child_frame_id: "odom"
+          transform:
+            translation: { x: 0.0, y: 0.0, z: 0.0 }
+            rotation: { x: 0.0, y: 0.0, z: 0.0, w: 1.0 }
+        - header: { stamp: { sec: 1, nanosec: 0 }, frame_id: "odom" }
+          child_frame_id: "base_link"
+          transform:
+            translation: { x: 0.0, y: 0.0, z: 0.0 }
+            rotation: { x: 0.0, y: 0.0, z: 0.0, w: 1.0 }
+  - callback_id: 0
+    optional: True
+  - callback_id: 3
+    topic: "/odom"
+    type: "nav_msgs/msg/Odometry"
+    optional: True
+    msg:
+      header: { stamp: { sec: 1, nanosec: 0 }, frame_id: "odom" }
+      child_frame_id: "base_link"
+      pose:
+        pose:
+          position: { x: 0.0, y: 0.0, z: 0.0 }
+          orientation: { x: 0.0, y: 0.0, z: 0.0, w: 1.0 }
+        covariance: [0.0, 0,0,0,0,0, 0,0.0,0,0,0,0, 0,0,0.0,0,0,0,
+                     0,0,0,0.0,0,0, 0,0,0,0,0.0,0, 0,0,0,0,0,0.0]
+      twist:
+        twist:
+          linear:  { x: 0.0, y: 0.0, z: 0.0 }
+          angular: { x: 0.0, y: 0.0, z: 0.0 }
+        covariance: [0.0, 0,0,0,0,0, 0,0.0,0,0,0,0, 0,0,0.0,0,0,0,
+                     0,0,0,0.0,0,0, 0,0,0,0,0.0,0, 0,0,0,0,0,0.0]
+target_callbacks:
+  # id 4 — navigate_to_pose (action goal)
+  - callback_id: 4
+    topic: "navigate_to_pose"
+    type: "nav2_msgs/action/NavigateToPose"
+    optional: False
+    msg:
+      pose:
+        header: { stamp: { sec: 2, nanosec: 0 }, frame_id: "map" }
+        pose:
+          position: { x: 2.0, y: 1.0, z: 0.0 }
+          orientation: { x: 0.0, y: 0.0, z: 0.0, w: 1.0 }
+      behavior_tree: ""

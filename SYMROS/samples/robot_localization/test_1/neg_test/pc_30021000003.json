@@ -1,0 +1,12 @@
+{
+    "input_id": 30021000003,
+    "parent_input_id": 1000003,
+    "location": "3002.0.0.install/tf2/include/tf2/tf2/LinearMath/Vector3.hpp.126",
+    "solving_weight": 8,
+    "constraint": [
+        {
+            "location": "3002.0.0.install/tf2/include/tf2/tf2/LinearMath/Vector3.hpp.126",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_7_twist_twist_angular_y__2625 () (_ BitVec 8))\n(declare-fun msg_7_twist_twist_angular_y__2626 () (_ BitVec 8))\n(declare-fun msg_7_twist_twist_angular_y__2627 () (_ BitVec 8))\n(declare-fun msg_7_twist_twist_angular_y__2628 () (_ BitVec 8))\n(declare-fun msg_7_twist_twist_angular_y__2629 () (_ BitVec 8))\n(declare-fun msg_7_twist_twist_angular_y__2630 () (_ BitVec 8))\n(declare-fun msg_7_twist_twist_angular_y__2631 () (_ BitVec 8))\n(declare-fun msg_7_twist_twist_angular_y__2632 () (_ BitVec 8))\n(assert\n (let ((?x62285 (concat msg_7_twist_twist_angular_y__2632 msg_7_twist_twist_angular_y__2631 msg_7_twist_twist_angular_y__2630 msg_7_twist_twist_angular_y__2629 msg_7_twist_twist_angular_y__2628 msg_7_twist_twist_angular_y__2627 msg_7_twist_twist_angular_y__2626 msg_7_twist_twist_angular_y__2625)))\n(let ((?x10529 (fp.mul roundNearestTiesToEven (_ +zero 11 53) ((_ to_fp 11 53) (fp.to_ieee_bv ((_ to_fp 11 53) (fp.to_ieee_bv ((_ to_fp 11 53) ?x62285))))))))\n(let (($x38685 (or (fp.eq ?x10529 (_ +oo 11 53)) (fp.eq ?x10529 (_ -oo 11 53)))))\n(let (($x38589 (not $x38685)))\n(not $x38589))))))\n(check-sat)\n"
+        }
+    ]
+}

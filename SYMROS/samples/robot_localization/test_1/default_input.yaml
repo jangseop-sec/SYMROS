@@ -1,0 +1,247 @@
+# robot_localization EKF (odom mode) — test message sequence
+# world_frame=odom, base_link_frame=base_footprint, two_d_mode=true, publish_tf=false
+
+pre_callbacks:
+  - callback_id: 2
+    topic: "/tf_static"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 0
+              nanosec: 0
+            frame_id: "base_footprint"
+          child_frame_id: "imu_link"
+          transform:
+            translation:
+              x: 0.0
+              y: 0.0
+              z: 0.1
+            rotation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 1.0
+
+  - callback_id: 1
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 0
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+            rotation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 1.0
+
+target_callbacks:
+  - callback_id: 5
+    topic: "/enable"
+    type: "std_srvs/srv/Empty"
+    optional: True
+    msg: {}
+
+  - callback_id: 6
+    topic: "/toggle"
+    type: "robot_localization/srv/ToggleFilterProcessing"
+    optional: True
+    msg:
+      on: 1
+
+  - callback_id: 11
+    topic: "/cmd_vel"
+    type: "geometry_msgs/msg/Twist"
+    optional: True
+    msg:
+      linear:
+        x: 0.5
+        y: 0.0
+        z: 0.0
+      angular:
+        x: 0.0
+        y: 0.0
+        z: 0.1
+
+  - callback_id: 7
+    topic: "/odom"
+    type: "nav_msgs/msg/Odometry"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "odom"
+      child_frame_id: "base_footprint"
+      pose:
+        pose:
+          position:
+            x: 1.0
+            y: 0.0
+            z: 0.0
+          orientation:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+            w: 1.0
+        covariance:
+          [0.01, 0.0, 0.0, 0.0, 0.0, 0.0,
+           0.0, 0.01, 0.0, 0.0, 0.0, 0.0,
+           0.0, 0.0, 0.01, 0.0, 0.0, 0.0,
+           0.0, 0.0, 0.0, 0.01, 0.0, 0.0,
+           0.0, 0.0, 0.0, 0.0, 0.01, 0.0,
+           0.0, 0.0, 0.0, 0.0, 0.0, 0.01]
+      twist:
+        twist:
+          linear:
+            x: 0.5
+            y: 0.0
+            z: 0.0
+          angular:
+            x: 0.0
+            y: 0.0
+            z: 0.1
+        covariance:
+          [0.01, 0.0, 0.0, 0.0, 0.0, 0.0,
+           0.0, 0.01, 0.0, 0.0, 0.0, 0.0,
+           0.0, 0.0, 0.01, 0.0, 0.0, 0.0,
+           0.0, 0.0, 0.0, 0.01, 0.0, 0.0,
+           0.0, 0.0, 0.0, 0.0, 0.01, 0.0,
+           0.0, 0.0, 0.0, 0.0, 0.0, 0.01]
+
+  - callback_id: 8
+    topic: "/pose"
+    type: "geometry_msgs/msg/PoseWithCovarianceStamped"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "odom"
+      pose:
+        pose:
+          position:
+            x: 1.0
+            y: 0.5
+            z: 0.0
+          orientation:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+            w: 1.0
+        covariance:
+          [0.01, 0.0, 0.0, 0.0, 0.0, 0.0,
+           0.0, 0.01, 0.0, 0.0, 0.0, 0.0,
+           0.0, 0.0, 0.01, 0.0, 0.0, 0.0,
+           0.0, 0.0, 0.0, 0.01, 0.0, 0.0,
+           0.0, 0.0, 0.0, 0.0, 0.01, 0.0,
+           0.0, 0.0, 0.0, 0.0, 0.0, 0.01]
+
+  - callback_id: 9
+    topic: "/twist"
+    type: "geometry_msgs/msg/TwistWithCovarianceStamped"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "base_footprint"
+      twist:
+        twist:
+          linear:
+            x: 0.5
+            y: 0.0
+            z: 0.0
+          angular:
+            x: 0.0
+            y: 0.0
+            z: 0.1
+        covariance:
+          [0.01, 0.0, 0.0, 0.0, 0.0, 0.0,
+           0.0, 0.01, 0.0, 0.0, 0.0, 0.0,
+           0.0, 0.0, 0.01, 0.0, 0.0, 0.0,
+           0.0, 0.0, 0.0, 0.01, 0.0, 0.0,
+           0.0, 0.0, 0.0, 0.0, 0.01, 0.0,
+           0.0, 0.0, 0.0, 0.0, 0.0, 0.01]
+
+  - callback_id: 10
+    topic: "/imu/data"
+    type: "sensor_msgs/msg/Imu"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "imu_link"
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 1.0
+      orientation_covariance:
+        [0.01, 0.0, 0.0,
+         0.0, 0.01, 0.0,
+         0.0, 0.0, 0.01]
+      angular_velocity:
+        x: 0.0
+        y: 0.0
+        z: 0.1
+      angular_velocity_covariance:
+        [0.01, 0.0, 0.0,
+         0.0, 0.01, 0.0,
+         0.0, 0.0, 0.01]
+      linear_acceleration:
+        x: 0.0
+        y: 0.0
+        z: 9.81
+      linear_acceleration_covariance:
+        [0.01, 0.0, 0.0,
+         0.0, 0.01, 0.0,
+         0.0, 0.0, 0.01]
+
+  - callback_id: 4
+    topic: "/set_pose"
+    type: "robot_localization/srv/SetPose"
+    optional: True
+    msg:
+      pose:
+        header:
+          stamp:
+            sec: 0
+            nanosec: 0
+          frame_id: "odom"
+        pose:
+          pose:
+            position:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+            orientation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 1.0
+          covariance:
+            [0.01, 0.0, 0.0, 0.0, 0.0, 0.0,
+             0.0, 0.01, 0.0, 0.0, 0.0, 0.0,
+             0.0, 0.0, 0.01, 0.0, 0.0, 0.0,
+             0.0, 0.0, 0.0, 0.01, 0.0, 0.0,
+             0.0, 0.0, 0.0, 0.0, 0.01, 0.0,
+             0.0, 0.0, 0.0, 0.0, 0.0, 0.01]

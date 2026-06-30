@@ -1,0 +1,22 @@
+{
+    "input_id": 20,
+    "parent_input_id": 0,
+    "location": "6.0.0.src/navigation2/nav2_costmap_2d/src/costmap_subscriber.cpp.83",
+    "solving_weight": 19,
+    "constraint": [
+        {
+            "smt": "(declare-fun msg_2_metadata_size_x__1428 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1427 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1426 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1425 () (_ BitVec 8))\n(assert (not (and (= msg_2_metadata_size_x__1425 #x00)\n          (= msg_2_metadata_size_x__1426 #x00)\n          (= msg_2_metadata_size_x__1427 #x00)\n          (= msg_2_metadata_size_x__1428 #x00))))\n\n",
+            "location": "6.0.0.src/navigation2/nav2_costmap_2d/src/costmap_subscriber.cpp.83",
+            "dependencies": []
+        },
+        {
+            "smt": "(declare-fun msg_2_metadata_size_x__1428 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1427 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1426 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1425 () (_ BitVec 8))\n(assert (not (and (= ((_ extract 7 1) msg_2_metadata_size_x__1425) #b0000000)\n          (= msg_2_metadata_size_x__1426 #x00)\n          (= msg_2_metadata_size_x__1427 #x00)\n          (= msg_2_metadata_size_x__1428 #x00))))\n\n",
+            "location": "6.0.0.src/navigation2/nav2_costmap_2d/src/costmap_subscriber.cpp.83",
+            "dependencies": []
+        },
+        {
+            "location": "6.0.0.src/navigation2/nav2_costmap_2d/src/costmap_subscriber.cpp.83",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_2_metadata_size_x__1425 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1428 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1427 () (_ BitVec 8))\n(declare-fun msg_2_metadata_size_x__1426 () (_ BitVec 8))\n(assert\n (let (($x233 (bvule ((_ extract 1 0) msg_2_metadata_size_x__1425) (_ bv2 2))))\n(let (($x83 (= msg_2_metadata_size_x__1428 (_ bv0 8))))\n(let (($x180 (= msg_2_metadata_size_x__1427 (_ bv0 8))))\n(let (($x149 (= msg_2_metadata_size_x__1426 (_ bv0 8))))\n(let (($x225 (= ((_ extract 7 2) msg_2_metadata_size_x__1425) (_ bv0 6))))\n(let (($x231 (not (and $x225 $x149 $x180 $x83 $x233))))\n(not $x231))))))))\n(check-sat)\n"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "input_id": 26,
+    "parent_input_id": 0,
+    "location": "39.0.0.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5701",
+    "solving_weight": 22,
+    "constraint": [
+        {
+            "smt": "(declare-fun msg_16_ranges_2__4242 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4243 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4244 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4245 () (_ BitVec 8))\n(assert (let ((a!1 ((_ to_fp 8 24)\n             (fp.to_ieee_bv ((_ to_fp 8 24)\n                              (concat msg_16_ranges_2__4245\n                                      msg_16_ranges_2__4244\n                                      msg_16_ranges_2__4243\n                                      msg_16_ranges_2__4242))))))\n(let ((a!2 (fp.to_ieee_bv ((_ to_fp 11 53)\n                            (fp.to_ieee_bv ((_ to_fp 11 53)\n                                             roundNearestTiesToEven\n                                             a!1))))))\n  (and (fp.leq ((_ to_fp 11 53) a!2) (fp #b0 #b10000000000 #xc000000000000))\n       (fp.leq (fp #b0 #b01111111011 #xeb851e0000000) ((_ to_fp 11 53) a!2))))))\n\n",
+            "location": "4.0.0.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5664",
+            "dependencies": []
+        },
+        {
+            "location": "39.0.0.src/slam_toolbox/lib/karto_sdk/include/karto_sdk/Karto.h.5701",
+            "smt": "; benchmark generated from python API\n(set-info :status unknown)\n(declare-fun msg_16_ranges_2__4242 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4243 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4244 () (_ BitVec 8))\n(declare-fun msg_16_ranges_2__4245 () (_ BitVec 8))\n(assert\n (let ((?x292 (fp (_ bv0 1) (_ bv1024 11) (_ bv1578922476554455 52))))\n(let ((?x290 (concat msg_16_ranges_2__4245 msg_16_ranges_2__4244 msg_16_ranges_2__4243 msg_16_ranges_2__4242)))\n(let ((?x67 (fp.to_ieee_bv ((_ to_fp 11 53) roundNearestTiesToEven ((_ to_fp 8 24) (fp.to_ieee_bv ((_ to_fp 8 24) ?x290)))))))\n(let ((?x294 ((_ to_fp 11 53) (fp.to_ieee_bv ((_ to_fp 11 53) ?x67)))))\n(let ((?x23 (fp.add roundNearestTiesToEven ?x292 (fp.mul roundNearestTiesToEven ?x294 (fp (_ bv1 1) (_ bv1017 11) (_ bv1814729814128398 52))))))\n(let (($x168 (fp.lt ((_ to_fp 11 53) (fp.to_ieee_bv ?x23)) ?x292)))\n(not $x168))))))))\n(check-sat)\n"
+        }
+    ]
+}

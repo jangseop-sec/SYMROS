@@ -1,0 +1,167 @@
+pre_callbacks:
+  - callback_id: 2
+    topic: "/tf_static"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 0
+              nanosec: 0
+            frame_id: "base_footprint"
+          child_frame_id: "laser"
+          transform:
+            translation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+            rotation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 1.0
+
+  - callback_id: 1
+    topic: "/tf"
+    type: "tf2_msgs/msg/TFMessage"
+    optional: False
+    msg:
+      transforms:
+        - header:
+            stamp:
+              sec: 1
+              nanosec: 0
+            frame_id: "odom"
+          child_frame_id: "base_footprint"
+          transform:
+            translation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+            rotation:
+              x: 0.0
+              y: 0.0
+              z: 0.0
+              w: 1.0
+  - callback_id: 0
+    optional: False
+
+
+target_callbacks:
+  - callback_id: 5
+    topic: "/map"
+    type: "nav_msgs/msg/OccupancyGrid"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 0
+          nanosec: 0
+        frame_id: "map"
+      info:
+        map_load_time:
+          sec: 0
+          nanosec: 0
+        resolution: 0.5
+        width: 5
+        height: 5
+        origin:
+          position:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+          orientation:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+            w: 1.0
+      data: [
+        0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0
+      ]
+  - callback_id: 6
+    topic: "/reinitialize_global_localization"
+    type: "std_msgs/msg/Empty"
+    optional: True
+    msg: {}
+  - callback_id: 8
+    topic: "/request_nomotion_update"
+    type: "std_msgs/msg/Empty"
+    optional: True
+    msg: {}
+  - callback_id: 3
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 1
+          nanosec: 0
+        frame_id: "laser"
+      angle_min: -3.14159
+      angle_max: 3.14159
+      angle_increment: 0.17453
+      time_increment: 0.0
+      scan_time: 0.1
+      range_min: 0.1
+      range_max: 10.0
+      ranges: [
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0
+      ]
+      intensities: [
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+      ]
+  - callback_id: 3
+    topic: "/scan"
+    type: "sensor_msgs/msg/LaserScan"
+    optional: False
+    msg:
+      header:
+        stamp:
+          sec: 1
+          nanosec: 0
+        frame_id: "laser"
+      angle_min: -3.14159
+      angle_max: 3.14159
+      angle_increment: 0.17453
+      time_increment: 0.0
+      scan_time: 0.1
+      range_min: 0.1
+      range_max: 10.0
+      ranges: [
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0, 2.0, 2.0, 2.0, 2.0,
+        2.0
+      ]
+      intensities: [
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+        0.0, 0.0, 0.0, 0.0, 0.0,
+      ]
