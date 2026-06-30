@@ -1,6 +1,6 @@
-# SYMROS: Enabling Symbolic Execution for ROS2 Robotic Systems
+# SYMROS: Enabling Symbolic Execution for ROS 2 Robotic Systems
 
-SYMROS performs compilation-based symbolic execution on ROS2 nodes: it builds the
+SYMROS performs compilation-based symbolic execution on ROS 2 nodes: it builds the
 target node with an instrumented compiler (SymCC) against instrumented C++
 libraries, drives the node through its lifecycle / entry code, and explores its
 input space to construct test drivers, run symbolic execution, and perform
